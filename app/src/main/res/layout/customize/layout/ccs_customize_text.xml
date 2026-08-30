@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/transparent"
+    app:cardElevation="0dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="12dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+app:cardCornerRadius="0dp"
+app:strokeColor="@color/transparent"
+    app:strokeWidth="0dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Text Property"
+            android:textAppearance="?attr/textAppearanceBodyLarge"
+            android:layout_marginBottom="8dp" />
+        <EditText
+            android:id="@+id/editTextInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="gaay"
+            android:background="@null"
+            android:inputType="textMultiLine"
+            android:textAppearance="?attr/textAppearanceBodyMedium" />
+    </LinearLayout>
+<View
+    android:layout_width="wrap_content"
+    android:layout_height="1dp"
+    android:background="@color/transparent"
+    android:layout_gravity="bottom">
+</View>
+</com.google.android.material.card.MaterialCardView>

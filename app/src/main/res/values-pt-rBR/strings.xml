@@ -1,0 +1,278 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Aylis Player</string>
+    <string name="pref_screen_ui_title">Aparência e Interface</string>
+    <string name="pref_screen_ui_summary">Tema do aplicativo, gestos e controles</string>
+    <string name="pref_screen_visualizer_title">Visualizador</string>
+    <string name="pref_screen_visualizer_summary">Taxa de quadros, atraso de áudio e qualidade do desfoque</string>
+    <string name="pref_screen_playback_title">Reprodução e Áudio</string>
+    <string name="pref_screen_playback_summary">Motor de áudio, esmaecimento e foco de áudio</string>
+    <string name="pref_screen_files_title">Arquivos e Pastas</string>
+    <string name="pref_screen_files_summary">Caminhos de salvamento de playlists</string>
+    <string name="pref_screen_system_title">Sistema</string>
+    <string name="pref_screen_system_summary">Redefinir configurações e licenças do aplicativo</string>
+    <string name="pref_resetToDefault_title">Redefinir para o padrão</string>
+    <string name="pref_appTheme">Tema de cores</string>
+    <string-array name="pref_appTheme_entries">
+        <item>Escuro</item>
+        <item>Claro</item>
+        <item>Cor dinâmica (M3)</item>
+    </string-array>
+    <string name="pref_hold_exit">Segure o botão VOLTAR para sair do aplicativo</string>
+    <string-array name="pref_hold_exit_entries">
+        <item>0.2 segundos</item>
+        <item>0.4 segundos</item>
+        <item>0.6 segundos</item>
+        <item>0.8 segundos</item>
+        <item>1.0 segundo</item>
+        <item>Desativado</item>
+    </string-array>
+    <string name="pref_libswipeback">Gesto de navegação na biblioteca</string>
+    <string name="pref_libswipeback2">Deslize para a direita para voltar na biblioteca</string>
+    <string name="pref_toolButtonsShowTexts">Texto dos botões de ferramentas</string>
+    <string name="pref_toolButtonsShowTexts2">Mostrar texto sob os botões de ferramentas</string>
+    <string name="pref_visControlsTimeout">Maximização automática do Vídeo/Visualizador</string>
+    <string name="pref_visControlsTimeout2">Maximizar automaticamente após um período de tempo</string>
+    <string name="pref_fadePlayPause">Esmaecimento de áudio</string>
+    <string name="pref_fadePlayPause2">Esmaecer áudio ao pausar/retomar</string>
+    <string name="pref_resumePlayingAfterAudioFocusGained">Retomar após término da chamada</string>
+    <string name="pref_resumePlayingAfterAudioFocusGained2">Retomar reprodução quando o foco de áudio for recuperado</string>
+    <string name="pref_playbackEngine">Motor de reprodução</string>
+    <string name="pref_exoVisualizerOffset">Atraso do visualizador ExoPlayer</string>
+    <string-array name="pref_exoVisualizerOffset_entries">
+        <item>0 ms</item>
+        <item>-100 ms</item>
+        <item>-200 ms</item>
+        <item>-300 ms</item>
+        <item>-400 ms</item>
+        <item>-500 ms (Padrão)</item>
+        <item>-600 ms</item>
+        <item>-700 ms</item>
+        <item>-800 ms</item>
+        <item>-900 ms</item>
+        <item>-1000 ms</item>
+    </string-array>
+    <string name="pref_highQualityBlur_txt1">Desfoque de alta qualidade</string>
+    <string name="pref_highQualityBlur_txt2">Pode reduzir bastante a taxa de quadros do visualizador</string>
+    <string name="pref_visualizerGlobalSession_txt1">Visualizar sessão de áudio global</string>
+    <string name="pref_visualizerGlobalSession_txt2">Evita distorção de áudio em alguns dispositivos</string>
+    <string name="pref_playlistDefaultPath_txt1">Caminho padrão para arquivos de playlist</string>
+    <string name="pref_resetTips_txt1">Redefinir dicas</string>
+    <string name="pref_resetTips_txt2">Mostrar todas as dicas novamente</string>
+    <string name="pref_reset_dialog_title">Redefinir para o padrão?</string>
+    <string name="pref_reset_dialog_message">Isso redefinirá todas as configurações salvas</string>
+    <string name="pref_openSourceLicenses">Licenças de terceiros</string>
+    <string name="pref_emailDeveloper_txt1">Enviar feedback geral</string>
+    <string name="pref_ui_layout_ccs_title">Usar layout de controle CCS</string>
+    <string name="pref_ui_layout_ccs_summary">Ativar visualização dividida 50/50 para visualizador e controles</string>
+    <string name="pref_about_title">Sobre o Aylis Player</string>
+    <string name="pref_about_summary">Informações, versões e licença</string>
+    <string name="pref_about_dialog_message">Aylis Player\n\nO projeto é baseado no código-fonte aberto do Avee Open Player (GitHub).\n\nInclui bibliotecas de terceiros: NewPipeExtractor (GPLv3), ExoPlayer e outras (consulte a seção Licenças).\n\nDistribuído sob a Licença GNU General Public License v3.0 (GPLv3).\n\nCopyright 2019 Avee Player.\nCopyright 2026 Aylis Player Contributors.</string>
+    <string name="playback_service_notif_channel_name">com.aylis.ch0</string>
+    <string name="fps_title_60">60 FPS (Recomendado)</string>
+    <string name="fps_title_120">120 FPS (Instável / Experimental)</string>
+    <string name="fps_warning_title">Renderização com alta taxa de atualização</string>
+    <string name="fps_warning_message">Ativar o modo 120 FPS pode aumentar o consumo de energia e causar renderização instável em alguns dispositivos. Deseja continuar?</string>
+    <string name="fps_dialog_ok">Continuar</string>
+    <string name="fps_dialog_cancel">Cancelar</string>
+    <string name="pref_visualizerFrameRateLimit">Limite de quadros do visualizador</string>
+    <string name="pref_visualizerResolutionScale">Escala de resolução do visualizador</string>
+    <string name="pref_theme_mode_title">Modo de tema</string>
+    <string-array name="pref_theme_mode_entries">
+        <item>Cor Dinâmica (M3)</item>
+    </string-array>
+    <string-array name="pref_theme_mode_values">
+        <item>1</item>
+    </string-array>
+    <string name="onboarding_welcome">Bem-vindo</string>
+    <string name="onboarding_start">Começar</string>
+    <string name="onboarding_permissions_title">Permissões</string>
+    <string name="onboarding_permissions_desc">Toque em um cartão para conceder permissão. O armazenamento é obrigatório.</string>
+    <string name="onboarding_storage_title">Armazenamento (Todos os arquivos)</string>
+    <string name="onboarding_storage_desc">Para música, vídeos e fontes.</string>
+    <string name="onboarding_mic_title">Microfone</string>
+    <string name="onboarding_mic_desc">Para o visualizador.</string>
+    <string name="onboarding_notif_title">Notificações</string>
+    <string name="onboarding_notif_desc">Controle na área de notificação.</string>
+    <string name="onboarding_continue">Continuar</string>
+    <string name="online_infinite_recommendations">Recomendações infinitas</string>
+    <string name="online_quick_picks">Escolhas rápidas</string>
+    <string name="online_listen_again">Ouvir novamente</string>
+    <string name="online_mixes">Mixes</string>
+    <string name="online_forgotten_favorites">Favoritos esquecidos</string>
+    <string name="online_similar_to">Semelhante a</string>
+    <string name="online_empty_search">Nenhum resultado encontrado</string>
+    <string name="online_network_error">Erro de rede. Verifique sua conexão</string>
+    <string name="export_title">EXPORTAR VÍDEO</string>
+    <string name="export_settings_title">CONFIGURAÇÕES DE EXPORTAÇÃO</string>
+    <string name="export_btn_cancel">Cancelar</string>
+    <string name="export_btn_close">Fechar</string>
+    <string name="export_btn_save">Salvar</string>
+    <string name="export_hint_quality">Qualidade</string>
+    <string name="export_hint_fps">Taxa de quadros (FPS)</string>
+    <string name="export_hint_bitrate">Taxa de bits</string>
+    <string name="export_btn_start_time">Início</string>
+    <string name="export_btn_end_time">Fim</string>
+    <string name="export_btn_start_time_format">Hora de início %1$s</string>
+    <string name="export_btn_end_time_format">Hora de término %1$s</string>
+    <string name="export_default_folder">Pasta padrão</string>
+    <string name="export_selected_folder">Pasta selecionada</string>
+    <string name="export_template_name_hint">Nome do modelo</string>
+    <string name="export_template_name_format">Modelo #%1$d</string>
+    <string name="export_bitrate_low">Baixa (5 Mbps)</string>
+    <string name="export_bitrate_medium">Média (10 Mbps)</string>
+    <string name="export_bitrate_high">Alta (20 Mbps)</string>
+    <string name="export_status_finished">Exportação concluída!</string>
+    <string name="export_error_prefix">Erro:</string>
+    <string name="export_error_no_track">Erro: Faixa em reprodução não encontrada!</string>
+    <string name="export_status_downloading">Baixando áudio...</string>
+    <string name="export_status_rendering">Renderizando vídeo...</string>
+    <string name="export_status_muxing">Montando arquivo...</string>
+    <string name="export_video_info_format">MP4 • %1$d MB • %2$s</string>
+    <string name="export_download_progress_format">%1$s %2$d / %3$s MB</string>
+    <string name="online_tab_discover">Início</string>
+    <string name="online_tab_playlists">Playlists</string>
+    <string name="online_tab_recap">Recapitulando</string>
+    <string name="online_already_logged_in">Já conectado</string>
+    <string name="online_create_new_playlist">Criar nova playlist</string>
+    <string name="online_dialog_new_playlist_title">Nova Playlist</string>
+    <string name="online_dialog_create">Criar</string>
+    <string name="online_dialog_cancel">Cancelar</string>
+    <string name="online_playlist_name_hint">Nome da playlist</string>
+    <string name="online_liked_music">Músicas curtidas</string>
+    <string name="online_auto_playlist">Auto playlist</string>
+    <string name="online_toast_created_playlist">Playlist criada</string>
+    <string name="online_toast_failed_to_create">Falha ao criar playlist</string>
+    <string name="online_toast_created_and_added">Criada e adicionada</string>
+    <string name="online_toast_added_to_playlist">Adicionada à playlist</string>
+    <string name="online_toast_failed_to_add">Falha ao adicionar</string>
+    <string name="online_toast_failed_to_load_playlist">Falha ao carregar playlist</string>
+    <string name="online_toast_removed_from_likes">Removida das curtidas</string>
+    <string name="online_toast_added_to_likes">Adicionada às curtidas</string>
+    <string name="online_toast_removed_from_list">Removida da lista</string>
+    <string name="online_menu_like">Curtir</string>
+    <string name="online_menu_remove_from_liked">Remover das curtidas</string>
+    <string name="online_menu_add_to_playlist">Adicionar à playlist</string>
+    <string name="online_menu_not_interested">Não tenho interesse</string>
+    <string name="online_search_hint">Pesquisar no YouTube Music...</string>
+    <string name="online_recent_searches">Pesquisas recentes</string>
+    <string name="online_recap_total_plays">Total de reproduções</string>
+    <string name="online_recap_avg_per_day">Média diária</string>
+    <string name="online_recap_top_track">Música mais ouvida</string>
+    <string name="online_recap_none">Nenhum</string>
+    <string name="online_recap_plays_count">%1$d reproduções</string>
+    <string name="online_recap_time_format">%1$d h %2$d min</string>
+    <string name="online_recap_time_format_mins">%1$d min</string>
+    <string name="online_playlist_add_to">Adicionar à playlist</string>
+    <string name="online_playlist_default_title">Playlist</string>
+    <string name="online_mix_title_placeholder">Título do mix</string>
+    <string name="online_mix_description_placeholder">Descrição</string>
+    <string name="online_search_query_placeholder">Termo de pesquisa</string>
+    <string name="pref_online_card_title">Som &amp; Online</string>
+    <string name="pref_online_shelf_playback_mode_title">Reprodução de coleções</string>
+    <string name="pref_online_shelf_playback_mode_queue">Seção inteira na fila</string>
+    <string name="pref_online_shelf_playback_mode_single">Apenas a faixa selecionada</string>
+    <string name="pref_online_infinite_radio_title">Recomendações infinitas</string>
+    <string name="pref_online_infinite_radio_summary">Carregar faixas semelhantes no final da fila</string>
+    <string name="pref_backup_restore_title">Backup e Restauração</string>
+    <string name="pref_backup_restore_summary">Importar e exportar configurações</string>
+    <string name="backup_saved_success">Backup salvo com sucesso</string>
+    <string name="backup_saved_error">Falha ao salvar o backup</string>
+    <string name="backup_restore_completed_title">Restauração Concluída</string>
+    <string name="backup_restore_completed_message">As configurações foram restauradas com sucesso. O aplicativo será reiniciado para aplicar as alterações.</string>
+    <string name="backup_restore_restart_button">Reiniciar</string>
+    <string name="backup_import_error">Falha ao importar o backup</string>
+    <string name="backup_share_title">Compartilhar Configurações</string>
+    <string name="backup_share_error">Falha ao preparar o backup para compartilhamento</string>
+    <string name="backup_dialog_main_message">Exporte suas configurações atuais ou importe um backup salvo anteriormente.\n\nNota: Os dados da conta do Google são excluídos dos backups por razões de segurança.</string>
+    <string name="backup_dialog_export_btn">Exportar</string>
+    <string name="backup_dialog_import_btn">Importar</string>
+    <string name="backup_dialog_export_title">Exportar Configurações</string>
+    <string name="backup_dialog_export_message">Escolha onde salvar o arquivo de backup.</string>
+    <string name="backup_dialog_save_device_btn">Salvar no Dispositivo</string>
+    <string name="backup_dialog_share_btn">Compartilhar</string>
+    <string name="profile_connected_ytm">Conectado ao YouTube Music</string>
+    <string name="profile_guest_mode">Modo Convidado</string>
+    <string name="profile_no_ytm_connection">Não conectado ao YouTube Music</string>
+    <string name="ambient_master_switch">Chave Geral (Todos os Perfis)</string>
+    <string name="ambient_enable_profile">Ativar Ambient Glow</string>
+    <string name="ambient_brightness">Brilho</string>
+    <string name="ambient_duration">Duração da Transição (ms)</string>
+    <string name="ambient_editor_title">Editor de Pontos de Ancoragem (Arraste para mover)</string>
+    <string name="ambient_btn_add_point">+1 Ponto</string>
+    <string name="ambient_btn_remove_point">-1 Ponto</string>
+    <string name="ambient_btn_reset_points">Redefinir para 5</string>
+    <string name="ambient_profile_dialogs">Diálogos</string>
+    <string name="ambient_profile_player_big">Player (Grande)</string>
+    <string name="ambient_profile_player_mini">Player (Mini)</string>
+    <string name="ambient_profile_main">Tela Principal</string>
+    <string name="font_download_prompt">Загрузить данный шрифт?</string>
+    <string name="font_download_yes">Да</string>
+    <string name="font_download_no">Нет</string>
+    <string name="font_author_format">Автор: %s</string>
+    <string name="photo_author_unknown">Wallhaven</string>
+    <string name="photo_btn_visit">Открыть оригинал</string>
+    <string name="photo_btn_download">Сохранить</string>
+    <string name="font_github_link">Открыть репозиторий GitHub</string>
+    <string name="tab_search_fonts">Search</string>
+    <string name="tab_downloaded_fonts">Downloaded</string>
+    <string name="dialog_delete_font_title">Удалить?</string>
+    <string name="dialog_delete_font_msg">Вы уверены, что хотите удалить этот шрифт?</string>
+    <string name="action_yes">Да</string>
+    <string name="action_no">Нет</string>
+    <string name="prop_typeface">Typeface</string>
+    <string name="tab_library_all">All</string>
+    <string name="tab_library_download">Download</string>
+    <string name="ads_header_banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="ads_footer_banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="ellipsis_placeholder">…</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    
+    
+    
+    
+    <string name="pref_ambient_settings_title">Ambient Glow Settings</string>
+    <string name="pref_screen_vibration_title">Vibration</string>
+    <string name="pref_hapticFeedback_intensity">Vibration Intensity</string>
+    <string name="pref_hapticFeedback_type">Vibration Type</string>
+    <string name="pref_haptic_global">Global Vibration</string>
+    <string name="pref_haptic_global2">Vibrate on any touch across the entire screen</string>
+    
+    
+    
+    
+    <string name="pref_receive_beta_updates">Получать бета-версии</string>
+    <string name="pref_receive_beta_updates_summary">Получать ранние сборки (Pre-release) с новыми функциями</string>
+    <string name="pref_check_updates">Проверить обновления</string>
+    <string name="pref_open_source_title">Open Source &amp; Acknowledgements</string>
+    <string name="pref_open_source_subtitle">Special thanks to the projects and people making Aylis Player possible</string>
+    <string name="open_source_desc_media3">High-performance media playback engine for Android</string>
+    <string name="open_source_desc_newpipe">Lightweight library to extract audio streams and metadata from public online services</string>
+    <string name="open_source_desc_github">Hosting and platform for open source collaboration</string>
+    <string name="open_source_desc_wallhaven">Awesome wallpaper community powering photo discovery</string>
+    <string name="open_source_thanks_avee">Thanks for the base, this app exists because of it!</string>
+    <string name="open_source_thanks_cubiq">Wonderful person</string>
+    <string name="open_source_thanks_android">Thank you for Android OS, allowing me to create apps like this</string>
+    <string name="open_source_desc_glide">Fast and efficient media management and image loading framework</string>
+    <string name="open_source_desc_retrofit">Type-safe HTTP client for Android and Java by Square</string>
+    <string name="open_source_desc_moshi">Modern JSON library for Android, Java and Kotlin by Square</string>
+    <string name="open_source_desc_bottombar">Smooth customizable bottom navigation bar for Android</string>
+    <string name="open_source_desc_jaudiotagger">Audio tagging library for managing audio file metadata</string>
+    <string name="crash_dialog_title">Произошла ошибка</string>
+    <string name="crash_dialog_desc">Приложение завершило работу из-за непредвиденной ошибки. Детали сбоя:</string>
+    <string name="crash_dialog_btn_share">Поделиться</string>
+    <string name="crash_dialog_btn_tg">ТГ автору</string>
+    <string name="crash_dialog_btn_close">Закрыть</string>
+    <string name="crash_share_text_prefix">Смотри, какой прикол, прога сдалась:\n\n%s</string>
+    <string name="crash_share_chooser_title">Поделиться логом</string>
+    <string name="crash_toast_copied">Лог скопирован в буфер обмена! Просто вставь его в чат.</string>
+    <string name="crash_toast_tg_not_found">Telegram не найден!</string>
+    <string name="photo_downloading_progress">Downloading: %d%%</string>
+    <string name="photo_downloaded">Downloaded</string>
+    <string name="photo_download_error">Error</string>
+    <string name="photo_select_quality">Select Quality</string>
+    <string name="photo_quality_raw">Raw (Original)</string>
+    <string name="photo_quality_full">Full (High)</string>
+    <string name="photo_quality_regular">Regular (Medium)</string>
+</resources>

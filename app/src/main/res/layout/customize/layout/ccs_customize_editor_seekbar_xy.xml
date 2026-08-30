@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="?attr/colorSurfaceContainer" app:cardElevation="0dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    app:cardCornerRadius="8dp"
+    app:strokeColor="@color/transparent"
+    app:strokeWidth="0dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/txtXLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X Axis"
+            android:layout_margin="2dp"
+            android:textAppearance="?attr/textAppearanceLabelSmall"/>
+        <com.google.android.material.slider.Slider
+            android:id="@+id/seekBarX"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:valueFrom="0"
+            android:valueTo="100"
+            android:value="0"
+            app:thumbColor="?attr/colorPrimary"
+            app:trackColorActive="?attr/colorPrimary"
+            app:trackColorInactive="?attr/colorSurfaceVariant"
+            app:tickColor="?attr/colorSurfaceVariant"
+            app:trackHeight="8dp"
+            app:thumbWidth="4dp"
+            app:thumbHeight="20dp"
+            app:labelBehavior="gone" />
+        <TextView
+            android:id="@+id/txtYLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Y Axis"
+            android:layout_margin="2dp"
+            android:textAppearance="?attr/textAppearanceLabelSmall"/>
+        <com.google.android.material.slider.Slider
+            android:id="@+id/seekBarY"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:valueFrom="0"
+            android:valueTo="100"
+            android:value="0"
+            app:thumbColor="?attr/colorPrimary"
+            app:trackColorActive="?attr/colorPrimary"
+            app:trackColorInactive="?attr/colorSurfaceVariant"
+            app:trackHeight="8dp"
+            app:thumbWidth="4dp"
+            app:thumbHeight="20dp"
+            app:tickColor="?attr/colorSurfaceVariant"
+            app:labelBehavior="gone" />
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.aylis.MainActivity">
+    <TextView
+        android:id="@+id/txtLibraryTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="8dp"
+        android:text="Library"
+        android:textColor="?attr/colorOnSurface"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnLibraryMore"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ImageButton
+        android:id="@+id/btnLibraryMore"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:padding="4dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/bg_button_pill"
+        android:backgroundTint="?attr/colorPrimaryContainer"
+        app:tint="?attr/colorOnPrimaryContainer"
+        android:src="@drawable/ic_overflowv_2_s"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/txtLibraryTitle"
+        app:layout_constraintBottom_toBottomOf="@id/txtLibraryTitle" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutActions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="6dp"
+        app:layout_constraintTop_toBottomOf="@id/txtLibraryTitle">
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayoutLibrary"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/bg_button_pill"
+            android:backgroundTint="?attr/colorSecondaryContainer"
+            app:tabIndicatorColor="?attr/colorOnSurface"
+            app:tabIndicatorHeight="3dp"
+            app:tabSelectedTextColor="?attr/colorOnSurface"
+            app:tabTextColor="?attr/colorOnSecondaryContainer"
+            app:tabIndicatorFullWidth="false"
+            app:tabMode="fixed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btnLibrarySearch"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tab_library_all" />
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tab_library_download" />
+        </com.google.android.material.tabs.TabLayout>
+        <ImageButton
+            android:id="@+id/btnLibrarySearch"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:padding="4dp"
+            android:background="@drawable/bg_button_pill"
+            android:backgroundTint="?attr/colorSurfaceContainerHighest"
+            android:src="@drawable/ic_search"
+            app:tint="?attr/colorOnSurface"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+        <ImageButton
+            android:id="@+id/btnLibrarySort"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:padding="4dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/bg_button_pill"
+            android:backgroundTint="?attr/colorSurfaceContainerHighest"
+            android:src="@drawable/ic_align_right"
+            app:tint="?attr/colorOnSurface"
+            app:layout_constraintEnd_toStartOf="@id/btnLibrarySearch"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchViewLibrary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="6dp"
+        android:background="@drawable/bg_button_pill"
+        android:backgroundTint="?attr/colorSurfaceContainerHigh"
+        app:iconifiedByDefault="false"
+        app:queryHint="Search library..."
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/layoutActions" />
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardLibraryContent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:cardBackgroundColor="#4DFFFFFF"
+        android:backgroundTint="?attr/colorSecondaryContainer"
+        app:cardElevation="0dp"
+        app:shapeAppearanceOverlay="@style/ShapeAppearance.Pill"
+        app:cardCornerRadius="28dp"
+        app:strokeColor="#1FFFFFFF"
+        app:strokeWidth="0.75dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/searchViewLibrary">
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewPagerLibrary"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent" />
+    </com.google.android.material.card.MaterialCardView>
+    <View
+        android:id="@+id/fast_scroller"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

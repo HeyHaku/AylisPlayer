@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:baselineAligned="false"
+    android:background="?attr/colorSurfaceContainerHigh"
+    android:padding="8dp">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:orientation="vertical"
+        android:paddingEnd="8dp">
+        <com.google.android.material.bottomsheet.BottomSheetDragHandleView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tint="?attr/colorOnSurfaceVariant" />
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/searchViewOnline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/bg_button_pill"
+            android:backgroundTint="?attr/colorSurface"
+            app:iconifiedByDefault="false"
+            app:queryHint="@string/online_search_hint" />
+        <com.google.android.material.progressindicator.CircularProgressIndicator
+            android:id="@+id/progressOnline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminate="true"
+            android:visibility="gone"
+            app:indicatorColor="?attr/colorPrimary"
+            android:layout_marginTop="12dp"/>
+        <LinearLayout
+            android:id="@+id/layoutSearchHistory"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:visibility="visible">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/online_recent_searches"
+                android:paddingHorizontal="8dp"
+                android:paddingBottom="4dp"
+                android:textAppearance="?attr/textAppearanceTitleSmall"
+                android:textColor="?attr/colorPrimary"
+                android:textStyle="bold" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerSearchHistory"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:paddingBottom="8dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_marginVertical="8dp"
+        android:background="?attr/colorSurfaceVariant" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewOnline"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="6"
+        android:paddingStart="8dp"
+        android:clipToPadding="false"
+        android:paddingBottom="40dp"
+        android:visibility="gone" />
+</LinearLayout>

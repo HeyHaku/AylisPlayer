@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="?attr/colorSurface">
+    <TextView
+        android:id="@+id/tvUpdateTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?attr/textAppearanceTitleLarge"
+        android:textColor="?attr/colorOnSurface"
+        tools:text="Доступно обновление: v1.1.0"
+        android:layout_marginBottom="16dp" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fadeScrollbars="false"
+        android:layout_marginBottom="24dp">
+        <TextView
+            android:id="@+id/tvUpdateChangelog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?attr/textAppearanceBodyMedium"
+            android:textColor="?attr/colorOnSurfaceVariant"
+            tools:text="- Исправлены баги\n- Добавлены новые фичи" />
+    </ScrollView>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnDownloadUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Скачать и установить"
+        style="@style/Widget.Material3.Button"
+        android:layout_marginBottom="8dp" />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnOpenGitHub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Открыть на GitHub"
+        style="@style/Widget.Material3.Button.TonalButton"
+        android:layout_marginBottom="8dp" />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnCancelUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Отмена"
+        style="@style/Widget.Material3.Button.TextButton" />
+</LinearLayout>

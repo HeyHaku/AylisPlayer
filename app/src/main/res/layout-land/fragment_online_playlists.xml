@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:baselineAligned="false">
+    <LinearLayout
+        android:id="@+id/headerPlaylists"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3.5"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="My Playlists"
+            android:textAppearance="?attr/textAppearanceHeadlineMedium"
+            android:textColor="?attr/colorPrimary"
+            android:textStyle="bold" />
+        <ImageButton
+            android:id="@+id/btnPlaylistsMore"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_button_pill"
+            android:backgroundTint="?attr/colorPrimaryContainer"
+            android:src="@drawable/ic_overflowv_2_s"
+            app:tint="?attr/colorOnPrimaryContainer" />
+    </LinearLayout>
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_marginVertical="16dp"
+        android:background="?attr/colorSurfaceVariant" />
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshPlaylists"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="6.5">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerPlaylistsTab"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:padding="12dp"
+            android:paddingBottom="56dp" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</LinearLayout>

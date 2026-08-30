@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true"
+    android:padding="8dp">
+    <SeekBar
+        android:id="@+id/seekBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:max="1000"
+        app:layout_constraintEnd_toStartOf="@+id/hintA"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/hintA"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:gravity="center"
+        android:paddingHorizontal="8dp"
+        android:textAppearance="?attr/textAppearanceBodyMedium"
+        app:layout_constraintBottom_toBottomOf="@+id/seekBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/seekBar"
+        tools:text="100%" />
+    <SeekBar
+        android:id="@+id/seekBar2"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="4dp"
+        android:max="1000"
+        app:layout_constraintEnd_toStartOf="@+id/hintB"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar" />
+    <TextView
+        android:id="@+id/hintB"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:gravity="center"
+        android:paddingHorizontal="8dp"
+        android:textAppearance="?attr/textAppearanceBodyMedium"
+        app:layout_constraintBottom_toBottomOf="@+id/seekBar2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/seekBar2"
+        tools:text="50%" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/spinnerTypeContainer"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/editTxt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar2">
+        <com.google.android.material.textfield.MaterialAutoCompleteTextView
+            android:id="@+id/spinnerType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:dropDownAnchor="@id/spinnerTypeContainer"
+            android:dropDownHeight="200dp"
+            android:inputType="none"
+            android:paddingStart="8dp"
+            android:paddingTop="6dp"
+            android:paddingEnd="4dp"
+            android:paddingBottom="6dp"
+            android:textAppearance="?attr/textAppearanceBodySmall" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <EditText
+        android:id="@+id/editTxt"
+        android:layout_width="72dp"
+        android:layout_height="36dp"
+        android:layout_marginEnd="4dp"
+        android:gravity="center"
+        android:inputType="numberDecimal"
+        android:padding="4dp"
+        android:textAppearance="?attr/textAppearanceBodySmall"
+        app:layout_constraintBottom_toBottomOf="@+id/spinnerTypeContainer"
+        app:layout_constraintEnd_toStartOf="@+id/editTxt2"
+        app:layout_constraintTop_toTopOf="@+id/spinnerTypeContainer"
+        tools:text="0.0" />
+    <EditText
+        android:id="@+id/editTxt2"
+        android:layout_width="72dp"
+        android:layout_height="36dp"
+        android:gravity="center"
+        android:inputType="numberDecimal"
+        android:padding="4dp"
+        android:textAppearance="?attr/textAppearanceBodySmall"
+        app:layout_constraintBottom_toBottomOf="@+id/spinnerTypeContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/spinnerTypeContainer"
+        tools:text="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

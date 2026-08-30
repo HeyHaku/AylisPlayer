@@ -1,0 +1,127 @@
+<resources>
+    <style name="AppTheme" parent="Theme.Material3.DynamicColors.DayNight.NoActionBar">
+        <item name="android:windowTranslucentNavigation">false</item>
+        <item name="android:actionModeStyle">@style/ActionModeStyle</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">?android:attr/colorBackground</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">?android:attr/colorBackground</item>
+        <item name="colorPrimaryDark">?android:attr/colorBackground</item>
+        <item name="android:navigationBarColor">@color/transparent</item>
+        <item name="android:divider">@null</item>
+        <item name="android:dividerHeight">0.0dip</item>
+        <item name="android:listDivider">@null</item>
+        <item name="colorAccent">?attr/colorTertiary</item>
+        <item name="seekArcStyle">@style/SeekArcLight</item>
+        <item name="iconTint">?attr/colorPrimary</item>
+    </style>
+    <style name="AppThemeSettings" parent="AppTheme">
+        <item name="android:actionModeStyle">@style/ActionModeStyle</item>
+        <item name="android:actionBarStyle">@style/FullscreenActionBarStyleColored</item>
+        <item name="colorPrimary">?attr/colorTertiary</item>
+        <item name="colorSurface">?attr/colorSurfaceContainer</item>
+        <item name="android:textColorPrimary">?android:attr/textColorPrimary</item>
+        <item name="android:textColorSecondary">?android:attr/textColorSecondary</item>
+        <item name="iconTint">?android:attr/textColorPrimary</item>
+        <item name="materialAlertDialogTheme">@style/AppTheme.Dialog.Expressive</item>
+        <item name="alertDialogTheme">@style/AppTheme.Dialog.Expressive</item>
+    </style>
+    <style name="AppTheme.Dialog.Alert" parent="Theme.AppCompat.Dialog.Alert">
+        <item name="android:windowBackground">@drawable/bg_dialog_rounded</item>
+        <item name="android:colorBackground">?attr/colorSurfaceContainer</item>
+        <item name="android:textColorPrimary">?android:attr/textColorPrimary</item>
+        <item name="android:textColorSecondary">?android:attr/textColorSecondary</item>
+        <item name="android:textColorAlertDialogListItem">?android:attr/textColorPrimary</item>
+        <item name="colorAccent">?attr/colorTertiary</item>
+        <item name="colorControlActivated">?attr/colorTertiary</item>
+        <item name="round">24dp</item>
+        <item name="colorControlHighlight">?attr/colorPrimaryContainer</item>
+        <item name="android:windowAnimationStyle">@style/TopMenuDialogAnimation</item>
+    </style>
+    <style name="MyListPopupWindowDarkStyle" parent="Widget.Material3.PopupMenu.ListPopupWindow">
+        <item name="android:popupBackground">@android:color/transparent</item>
+        <item name="android:textAppearance">?attr/textAppearanceBodySmall</item>
+    </style>
+    <style name="AppTheme.Dialog.Expressive" parent="ThemeOverlay.Material3.MaterialAlertDialog">
+        <item name="android:windowAnimationStyle">@style/DialogSpringAnimation</item>
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.Material3.Dialog</item>
+    </style>
+    <style name="Theme.App.Dialog.Animated" parent="ThemeOverlay.Material3.MaterialAlertDialog">
+        <item name="android:windowAnimationStyle">@style/DialogSpringAnimation</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+    <style name="FullscreenActionBarStyle" parent="Widget.Material3.ActionBar.Solid">
+        <item name="android:background">#00000000</item>
+        <item name="android:height">@dimen/actionbar_height</item>
+        <item name="android:titleTextStyle">?attr/textAppearanceTitleMedium</item>
+        <item name="titleTextStyle">?attr/textAppearanceTitleMedium</item>
+        <item name="android:subtitleTextStyle">?attr/textAppearanceBodyMedium</item>
+        <item name="subtitleTextStyle">?attr/textAppearanceBodyMedium</item>
+        <item name="contentInsetStart">0dp</item>
+        <item name="android:contentInsetStart">0dp</item>
+        <item name="contentInsetStartWithNavigation">0dp</item>
+    </style>
+    <style name="FullscreenActionBarStyleColored" parent="Widget.Material3.ActionBar.Solid">
+        <item name="android:background">?attr/colorPrimary</item>
+        <item name="android:height">@dimen/actionbar_height</item>
+        <item name="android:titleTextStyle">?attr/textAppearanceTitleMedium</item>
+        <item name="titleTextStyle">?attr/textAppearanceTitleMedium</item>
+        <item name="android:subtitleTextStyle">?attr/textAppearanceBodyMedium</item>
+        <item name="subtitleTextStyle">?attr/textAppearanceBodyMedium</item>
+        <item name="contentInsetStart">0dp</item>
+        <item name="android:contentInsetStart">0dp</item>
+        <item name="contentInsetStartWithNavigation">0dp</item>
+    </style>
+    <style name="ActionModeStyle" parent="Widget.Material3.ActionMode">
+        <item name="android:background">@color/white_alpha_2</item>
+        <item name="android:backgroundSplit">?android:attr/actionModeSplitBackground</item>
+        <item name="android:titleTextStyle">?attr/textAppearanceTitleSmall</item>
+        <item name="android:subtitleTextStyle">?attr/textAppearanceBodySmall</item>
+    </style>
+    <style name="ShapeAppearance.Drawer" parent="">
+        <item name="cornerSizeTopLeft">0dp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+        <item name="cornerSizeTopRight">24dp</item>
+        <item name="cornerSizeBottomRight">24dp</item>
+    </style>
+    <style name="ExpressiveImageButton" parent="Widget.AppCompat.ImageButton">
+        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
+        <item name="android:stateListAnimator">@animator/expressive_button_state</item>
+    </style>
+    <style name="TopMenuDialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/fade_in</item>
+        <item name="android:windowExitAnimation">@anim/fade_out</item>
+    </style>
+    <style name="DialogSpringAnimation">
+        <item name="android:windowEnterAnimation">@anim/dialog_spring_enter</item>
+        <item name="android:windowExitAnimation">@anim/dialog_spring_exit</item>
+    </style>
+    <style name="SeekArcLight">
+        <item name="arcColor">@color/progress_gray</item>
+    </style>
+    <style name="ShapeAppearanceOverlay.Material3.Dialog" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">28dp</item>
+    </style>
+    <style name="ShapeAppearance.LibraryContainer" parent="">
+        <item name="cornerSizeTopLeft">32dp</item>
+        <item name="cornerSizeTopRight">32dp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+    </style>
+    <style name="ShapeAppearance.LibraryItemArt" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+    <style name="ShapeAppearance.Pill" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+    <style name="SettingsDivider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_marginStart">56dp</item>
+        <item name="android:background">?attr/colorOutlineVariant</item>
+        <item name="android:alpha">0.4</item>
+    </style>
+</resources>

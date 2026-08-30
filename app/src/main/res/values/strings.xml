@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="font_download_prompt">Download this font?</string>
+    <string name="font_download_yes">Yes</string>
+    <string name="font_download_no">No</string>
+    <string name="font_author_format">Author: %s</string>
+    <string name="photo_author_unknown">Wallhaven</string>
+    <string name="photo_btn_visit">Open Original</string>
+    <string name="photo_btn_download">Save</string>
+    <string name="photo_downloading_progress">Downloading: %d%%</string>
+    <string name="photo_downloaded">Downloaded</string>
+    <string name="photo_download_error">Error</string>
+    <string name="photo_select_quality">Select Quality</string>
+    <string name="photo_quality_raw">Raw (Original)</string>
+    <string name="photo_quality_full">Full (High)</string>
+    <string name="photo_quality_regular">Regular (Medium)</string>
+    <string name="font_github_link">Open GitHub repository</string>
+    <string name="tab_search_fonts">Search</string>
+    <string name="tab_downloaded_fonts">Downloaded</string>
+    <string name="dialog_delete_font_title">Delete?</string>
+    <string name="dialog_delete_font_msg">Are you sure you want to delete this font?</string>
+    <string name="action_yes">Yes</string>
+    <string name="action_no">No</string>
+    <string name="prop_typeface">Typeface</string>
+    <string name="app_name">Aylis Player</string>
+    <string name="tab_library_all">All</string>
+    <string name="tab_library_download">Download</string>
+    <string name="pref_about_title">About Aylis Player</string>
+    <string name="pref_about_summary">Information, versions, and license</string>
+    <string name="pref_about_dialog_message">Aylis Player\n\nAll-in-one media powerhouse:\n• Music &amp; Streaming — Play local library and online streams\n• Audio Visualizer — Real-time reactive spectrums &amp; graphics\n• Wallpaper Hub — Explore and set custom artwork &amp; photos\n• Font Customization — Tailor system typography to your preference\n\nBuilt on top of Avee Open Player codebase with love from open-source community.\n\nAylis Player © 2026</string>
+    <string name="playback_service_notif_channel_name">com.aylis.ch0</string>
+    <string name="ads_header_banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="ads_footer_banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="ellipsis_placeholder">…</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="fps_title_60">60 FPS (Recommended)</string>
+    <string name="fps_title_120">120 FPS (Unstable / Experimental)</string>
+    <string name="fps_warning_title">High Refresh Rate Rendering</string>
+    <string name="fps_warning_message">Enabling 120 FPS mode may increase power consumption and lead to unstable rendering or frame drops on some hardware. Do you want to proceed?</string>
+    <string name="fps_dialog_ok">Proceed</string>
+    <string name="fps_dialog_cancel">Cancel</string>
+    <string name="pref_visualizerFrameRateLimit">Visualizer Frame Rate Limit</string>
+    <string-array name="pref_visualizerFrameRateLimit_entries">
+        <item>60 FPS (Recommended)</item>
+        <item>120 FPS (Unstable / Experimental)</item>
+    </string-array>
+    <string-array name="pref_visualizerFrameRateLimit_values">
+        <item>60</item>
+        <item>120</item>
+    </string-array>
+    <string name="pref_visualizerResolutionScale">Visualizer Resolution Scale</string>
+    <string-array name="pref_visualizerResolutionScale_entries">
+        <item>1/1 (Full)</item>
+        <item>1/1.5</item>
+        <item>1/2 (Half)</item>
+        <item>1/2.5</item>
+        <item>1/3</item>
+        <item>1/4 (Quarter)</item>
+    </string-array>
+    <string-array name="pref_visualizerResolutionScale_values">
+        <item>1.0</item>
+        <item>1.5</item>
+        <item>2.0</item>
+        <item>2.5</item>
+        <item>3.0</item>
+        <item>4.0</item>
+    </string-array>
+    <string name="pref_ambient_settings_title">Ambient Glow Settings</string>
+    <string name="pref_theme_mode_title">Theme Mode</string>
+    <string-array name="pref_theme_mode_entries">
+        <item>Dynamic Color (M3)</item>
+    </string-array>
+    <string-array name="pref_theme_mode_values">
+        <item>1</item>
+    </string-array>
+    <string name="onboarding_welcome">Welcome</string>
+    <string name="onboarding_start">Start</string>
+    <string name="onboarding_permissions_title">Permissions</string>
+    <string name="onboarding_permissions_desc">Tap a card to grant permission. Storage is required.</string>
+    <string name="onboarding_storage_title">Storage (All files)</string>
+    <string name="onboarding_storage_desc">For music, videos, and fonts.</string>
+    <string name="onboarding_mic_title">Microphone</string>
+    <string name="onboarding_mic_desc">For the visualizer.</string>
+    <string name="onboarding_notif_title">Notifications</string>
+    <string name="onboarding_notif_desc">Playback control in the shade.</string>
+    <string name="onboarding_continue">Continue</string>
+    <string name="pref_screen_vibration_title">Vibration</string>
+    <string name="pref_hapticFeedback_intensity">Vibration Intensity</string>
+    <string name="pref_hapticFeedback_type">Vibration Type</string>
+    <string name="pref_haptic_global">Global Vibration</string>
+    <string name="pref_haptic_global2">Vibrate on any touch across the entire screen</string>
+    <string-array name="pref_hapticFeedback_type_entries">
+        <item>Knock</item>
+        <item>Soft</item>
+    </string-array>
+    <string-array name="pref_hapticFeedback_type_values">
+        <item>knock</item>
+        <item>soft</item>
+    </string-array>
+    <string name="online_infinite_recommendations">Infinite Recommendations</string>
+    <string name="online_quick_picks">Quick Picks</string>
+    <string name="online_listen_again">Listen Again</string>
+    <string name="online_mixes">Mixes</string>
+    <string name="online_forgotten_favorites">Forgotten Favorites</string>
+    <string name="online_similar_to">Similar to</string>
+    <string name="online_empty_search">Nothing found</string>
+    <string name="online_network_error">Network error. Check your connection</string>
+    <string name="export_title">EXPORT VIDEO</string>
+    <string name="export_settings_title">EXPORT SETTINGS</string>
+    <string name="export_btn_cancel">Cancel</string>
+    <string name="export_btn_close">Close</string>
+    <string name="export_btn_save">Save</string>
+    <string name="export_hint_quality">Quality</string>
+    <string name="export_hint_fps">Frame rate (FPS)</string>
+    <string name="export_hint_bitrate">Bitrate</string>
+    <string name="export_btn_start_time">Start</string>
+    <string name="export_btn_end_time">End</string>
+    <string name="export_btn_start_time_format">Start time %1$s</string>
+    <string name="export_btn_end_time_format">End time %1$s</string>
+    <string name="export_default_folder">Default folder</string>
+    <string name="export_selected_folder">Selected folder</string>
+    <string name="export_template_name_hint">Template name</string>
+    <string name="export_template_name_format">Template #%1$d</string>
+    <string name="export_bitrate_low">Low (5 Mbps)</string>
+    <string name="export_bitrate_medium">Medium (10 Mbps)</string>
+    <string name="export_bitrate_high">High (20 Mbps)</string>
+    <string name="export_status_finished">Export finished!</string>
+    <string name="export_error_prefix">Error:</string>
+    <string name="export_error_no_track">Error: Playing track not found!</string>
+    <string name="export_status_downloading">Downloading audio...</string>
+    <string name="export_status_rendering">Rendering video...</string>
+    <string name="export_status_muxing">Muxing file...</string>
+    <string name="export_video_info_format">MP4 • %1$d MB • %2$s</string>
+    <string name="export_download_progress_format">%1$s %2$d / %3$s MB</string>
+    <string name="online_tab_discover">Home</string>
+    <string name="online_tab_playlists">Playlists</string>
+    <string name="online_tab_recap">Recap</string>
+    <string name="online_already_logged_in">Already logged in</string>
+    <string name="online_create_new_playlist">Create new playlist</string>
+    <string name="online_dialog_new_playlist_title">New Playlist</string>
+    <string name="online_dialog_create">Create</string>
+    <string name="online_dialog_cancel">Cancel</string>
+    <string name="online_playlist_name_hint">Playlist name</string>
+    <string name="online_liked_music">Liked songs</string>
+    <string name="online_auto_playlist">Auto playlist</string>
+    <string name="online_toast_created_playlist">Playlist created</string>
+    <string name="online_toast_failed_to_create">Failed to create playlist</string>
+    <string name="online_toast_created_and_added">Created and added</string>
+    <string name="online_toast_added_to_playlist">Added to playlist</string>
+    <string name="online_toast_failed_to_add">Failed to add</string>
+    <string name="online_toast_failed_to_load_playlist">Failed to load playlist</string>
+    <string name="online_toast_removed_from_likes">Removed from likes</string>
+    <string name="online_toast_added_to_likes">Added to likes</string>
+    <string name="online_toast_removed_from_list">Removed from list</string>
+    <string name="online_menu_like">Like</string>
+    <string name="online_menu_remove_from_liked">Remove from likes</string>
+    <string name="online_menu_add_to_playlist">Add to playlist</string>
+    <string name="online_menu_not_interested">Not interested</string>
+    <string name="online_search_hint">Search YouTube Music...</string>
+    <string name="online_recent_searches">Recent searches</string>
+    <string name="online_recap_total_plays">Total Plays</string>
+    <string name="online_recap_avg_per_day">Daily Average</string>
+    <string name="online_recap_top_track">Top Track</string>
+    <string name="online_recap_none">None</string>
+    <string name="online_recap_plays_count">%1$d plays</string>
+    <string name="online_recap_time_format">%1$d h %2$d min</string>
+    <string name="online_recap_time_format_mins">%1$d min</string>
+    <string name="online_playlist_add_to">Add to playlist</string>
+    <string name="online_playlist_default_title">Playlist</string>
+    <string name="online_mix_title_placeholder">Mix title</string>
+    <string name="online_mix_description_placeholder">Description</string>
+    <string name="online_search_query_placeholder">Search query</string>
+    <string name="pref_online_card_title">Sound &amp; Online</string>
+    <string name="pref_online_shelf_playback_mode_title">Playback from collections</string>
+    <string name="pref_online_shelf_playback_mode_queue">Entire section to queue</string>
+    <string name="pref_online_shelf_playback_mode_single">Only selected track</string>
+    <string name="pref_online_infinite_radio_title">Infinite recommendations</string>
+    <string name="pref_online_infinite_radio_summary">Load similar tracks to the end of the queue</string>
+    <string-array name="pref_online_shelf_playback_mode_entries">
+        <item>@string/pref_online_shelf_playback_mode_queue</item>
+        <item>@string/pref_online_shelf_playback_mode_single</item>
+    </string-array>
+    <string-array name="pref_online_shelf_playback_mode_values">
+        <item>queue</item>
+        <item>single</item>
+    </string-array>
+    <string name="pref_backup_restore_title">Backup &amp; Restore</string>
+    <string name="pref_backup_restore_summary">Import and export app settings</string>
+    <string name="backup_saved_success">Backup saved successfully</string>
+    <string name="backup_saved_error">Failed to save backup</string>
+    <string name="backup_restore_completed_title">Restore Completed</string>
+    <string name="backup_restore_completed_message">Settings have been successfully restored. The app will restart to apply changes.</string>
+    <string name="backup_restore_restart_button">Restart</string>
+    <string name="backup_import_error">Failed to import backup</string>
+    <string name="backup_share_title">Share Settings</string>
+    <string name="backup_share_error">Failed to prepare backup for sharing</string>
+    <string name="backup_dialog_main_message">Export your current settings or import a previously saved backup.\n\nNote: Google Account data is excluded from backups for security.</string>
+    <string name="backup_dialog_export_btn">Export</string>
+    <string name="backup_dialog_import_btn">Import</string>
+    <string name="backup_dialog_export_title">Export Settings</string>
+    <string name="backup_dialog_export_message">Choose where to save your backup file.</string>
+    <string name="backup_dialog_save_device_btn">Save to Device</string>
+    <string name="backup_dialog_share_btn">Share</string>
+    <string name="pref_receive_beta_updates">Receive beta versions</string>
+    <string name="pref_receive_beta_updates_summary">Receive early builds (Pre-release) with new features</string>
+    <string name="pref_check_updates">Check for updates</string>
+    <string name="profile_connected_ytm">Connected to YouTube Music</string>
+    <string name="profile_guest_mode">Guest mode</string>
+    <string name="profile_no_ytm_connection">Not connected to YouTube Music</string>
+    <string name="ambient_master_switch">Master Switch (All Profiles)</string>
+    <string name="ambient_enable_profile">Enable Ambient Glow</string>
+    <string name="ambient_brightness">Brightness</string>
+    <string name="ambient_duration">Crossfade Duration (ms)</string>
+    <string name="ambient_editor_title">Anchor Points Editor (Drag to move)</string>
+    <string name="ambient_btn_add_point">+1 Point</string>
+    <string name="ambient_btn_remove_point">-1 Point</string>
+    <string name="ambient_btn_reset_points">Reset to 5</string>
+    <string name="ambient_profile_dialogs">Dialogs</string>
+    <string name="ambient_profile_player_big">Player (Full)</string>
+    <string name="ambient_profile_player_mini">Player (Mini)</string>
+    <string name="ambient_profile_main">Main Screen</string>
+    <string name="pref_open_source_title">Open Source &amp; Acknowledgements</string>
+    <string name="pref_open_source_subtitle">Special thanks to the projects and people making Aylis Player possible</string>
+    <string name="open_source_desc_media3">High-performance media playback engine for Android</string>
+    <string name="open_source_desc_newpipe">Lightweight library to extract audio streams and metadata from public online services</string>
+    <string name="open_source_desc_github">Hosting and platform for open source collaboration</string>
+    <string name="open_source_desc_wallhaven">Awesome wallpaper community powering photo discovery</string>
+    <string name="open_source_thanks_avee">Thanks for the base, this app exists because of it!</string>
+    <string name="open_source_thanks_cubiq">Wonderful person</string>
+    <string name="open_source_thanks_android">Thank you for Android OS, allowing me to create apps like this</string>
+    <string name="open_source_desc_glide">Fast and efficient media management and image loading framework</string>
+    <string name="open_source_desc_retrofit">Type-safe HTTP client for Android and Java by Square</string>
+    <string name="open_source_desc_moshi">Modern JSON library for Android, Java and Kotlin by Square</string>
+    <string name="open_source_desc_bottombar">Smooth customizable bottom navigation bar for Android</string>
+    <string name="open_source_desc_jaudiotagger">Audio tagging library for managing audio file metadata</string>
+    <string name="crash_dialog_title">An error occurred</string>
+    <string name="crash_dialog_desc">The app closed due to an unexpected error. Crash details:</string>
+    <string name="crash_dialog_btn_share">Share</string>
+    <string name="crash_dialog_btn_tg">Telegram to author</string>
+    <string name="crash_dialog_btn_close">Close</string>
+    <string name="crash_share_text_prefix">App crash log:\n\n%s</string>
+    <string name="crash_share_chooser_title">Share crash log</string>
+    <string name="crash_toast_copied">Log copied to clipboard!</string>
+    <string name="crash_toast_tg_not_found">Telegram not found!</string>
+</resources>

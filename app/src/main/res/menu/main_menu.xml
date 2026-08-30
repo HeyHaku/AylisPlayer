@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_bar_search"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        android:icon="@drawable/ic_search_2_s"
+        app:showAsAction="always"
+        android:visible="false"
+        android:title="@string/menu_search" />
+    <item
+        android:id="@+id/action_bar_sleep_timer_indicator"
+        android:icon="@drawable/ic_timer3"
+        app:showAsAction="always"
+        android:title="Sleep timer" />
+    <item
+        android:id="@+id/action_bar_lock_orient_indicator"
+        android:icon="@drawable/ic_lock_rot3"
+        app:showAsAction="always"
+        android:title="Lock orientation" />
+</menu>

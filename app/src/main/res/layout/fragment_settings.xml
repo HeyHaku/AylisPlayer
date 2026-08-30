@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true"
+    android:background="@android:color/transparent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="16dp"
+        android:paddingTop="24dp"
+        android:paddingBottom="250dp">
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:cardBackgroundColor="#4DFFFFFF"
+            android:backgroundTint="?attr/colorSurfaceContainerHigh"
+            app:cardCornerRadius="24dp"
+            app:cardElevation="0dp"
+            app:strokeColor="#1FFFFFFF"
+            app:strokeWidth="0.75dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="16dp">
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginEnd="16dp"
+                    app:shapeAppearanceOverlay="@style/ShapeAppearance.Pill"
+                    app:cardBackgroundColor="#4DFFFFFF"
+                    android:backgroundTint="?attr/colorPrimaryContainer"
+                    app:cardElevation="0dp"
+                    app:strokeColor="#1FFFFFFF"
+                    app:strokeWidth="0.75dp">
+                    <TextView
+                        android:id="@+id/tvProfileMonogram"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="G"
+                        android:textColor="?attr/colorOnPrimaryContainer"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                    <ImageView
+                        android:id="@+id/ivProfileIcon"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="12dp"
+                        android:src="@drawable/ic_account_circle"
+                        android:visibility="gone"
+                        app:tint="?attr/colorOnPrimaryContainer" />
+                </com.google.android.material.card.MaterialCardView>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/tvProfileName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Гостевой режим"
+                        android:textColor="?attr/colorOnSurface"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/tvProfileStatus"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Нет подключения к YouTube Music"
+                        android:textColor="?attr/colorOnSurfaceVariant"
+                        android:textSize="14sp" />
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_chevron_right"
+                    app:tint="?attr/colorOnSurfaceVariant" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardOpenSource"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:cardBackgroundColor="#4DFFFFFF"
+            android:backgroundTint="?attr/colorSurfaceContainerHigh"
+            app:cardCornerRadius="24dp"
+            app:cardElevation="0dp"
+            app:strokeColor="#1FFFFFFF"
+            app:strokeWidth="0.75dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackground"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="16dp">
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginEnd="16dp"
+                    app:shapeAppearanceOverlay="@style/ShapeAppearance.Pill"
+                    app:cardBackgroundColor="#4DFFFFFF"
+                    android:backgroundTint="?attr/colorSecondaryContainer"
+                    app:cardElevation="0dp"
+                    app:strokeColor="#1FFFFFFF"
+                    app:strokeWidth="0.75dp">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="12dp"
+                        android:src="@drawable/ic_info2"
+                        app:tint="?attr/colorOnSecondaryContainer" />
+                </com.google.android.material.card.MaterialCardView>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pref_open_source_title"
+                        android:textColor="?attr/colorOnSurface"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pref_open_source_subtitle"
+                        android:textColor="?attr/colorOnSurfaceVariant"
+                        android:textSize="14sp" />
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_chevron_right"
+                    app:tint="?attr/colorOnSurfaceVariant" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/pref_screen_ui_title"
+            android:textAppearance="?attr/textAppearanceTitleSmall"
+            android:textColor="?attr/colorOnSurface" />
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardBackgroundColor="#4DFFFFFF"
+            android:backgroundTint="?attr/colorSurfaceContainer"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="0dp"
+            app:strokeColor="#1FFFFFFF"
+            app:strokeWidth="0.75dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <include layout="@layout/item_setting_action" android:id="@+id/itemTheme" />
+                <View android:background="?attr/colorOutlineVariant"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="56dp"
+                    android:layout_width="match_parent"
+                    />
+                <include layout="@layout/item_setting_action" android:id="@+id/itemAmbientSettings" />
+                <View android:background="?attr/colorOutlineVariant"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="56dp"
+                    android:layout_width="match_parent"
+                    />
+                <include layout="@layout/item_setting_switch" android:id="@+id/itemUiLayoutCcs" />
+                <View android:background="?attr/colorOutlineVariant" android:layout_height="1dp" android:layout_marginStart="56dp" android:layout_width="match_parent"/>
+                <include layout="@layout/item_setting_switch"
+                    android:id="@+id/itemLibUseSwipeBack"
+                    android:visibility="gone"/>
+                <include layout="@layout/item_setting_switch"
+                    android:id="@+id/itemToolButtonsShowTexts"
+                    android:visibility="gone"/>
+                <include layout="@layout/item_setting_switch"
+                    android:visibility="gone"
+                    android:id="@+id/itemVisControlsTimeout" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/pref_screen_vibration_title"
+            android:textAppearance="?attr/textAppearanceTitleSmall"
+            android:textColor="?attr/colorOnSurface" />
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardBackgroundColor="#4DFFFFFF"
+            android:backgroundTint="?attr/colorSurfaceContainer"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="0dp"
+            app:strokeColor="#1FFFFFFF"
+            app:strokeWidth="0.75dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <include layout="@layout/item_setting_slider"
+                    android:id="@+id/itemHapticIntensity" />
+                <View android:background="?attr/colorOutlineVariant" android:layout_height="1dp" android:layout_marginStart="56dp" android:layout_width="match_parent"/>
+                <include layout="@layout/item_setting_action"
+                    android:id="@+id/itemHapticType" />
+                <View android:background="?attr/colorOutlineVariant" android:layout_height="1dp" android:layout_marginStart="56dp" android:layout_width="match_parent"/>
+                <include layout="@layout/item_setting_switch"
+                    android:id="@+id/itemHapticGlobal" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/pref_screen_visualizer_title"
+            android:textAppearance="?attr/textAppearanceTitleSmall"
+            android:textColor="?attr/colorOnSurface" />
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardBackgroundColor="#4DFFFFFF"
+            android:backgroundTint="?attr/colorSurfaceContainer"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="0dp"
+            app:strokeColor="#1FFFFFFF"
+            app:strokeWidth="0.75dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <include layout="@layout/item_setting_action" android:id="@+id/itemExoVisualizerOffset" />
+                <View android:background="?attr/colorOutlineVariant" android:layout_height="1dp" android:layout_marginStart="56dp" android:layout_width="match_parent"/>
+                <include layout="@layout/item_setting_action" android:id="@+id/itemVisualizerFps" />
+                <View android:background="?attr/colorOutlineVariant" android:layout_height="1dp" android:layout_marginStart="56dp" android:layout_width="match_parent"/>
+                <include layout="@layout/item_setting_action" android:id="@+id/itemVisualizerResolution" />
+                <include layout="@layout/item_setting_switch"
+                    android:visibility="gone"
+                    android:id="@+id/itemVisualizerGlobalSession" />
+                <include layout="@layout/item_setting_switch"
+                    android:visibility="visible"
+                    android:id="@+id/itemHighQualityBlur" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/pref_screen_playback_title"
+            android:textAppearance="?attr/textAppearanceTitleSmall"
+            android:visibility="visible"
+            android:textColor="?attr/colorOnSurface" />
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardBackgroundColor="#4DFFFFFF"
+            android:backgroundTint="?attr/colorSurfaceContainer"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="0dp"
+            app:strokeColor="#1FFFFFFF"
+            app:strokeWidth="0.75dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <include layout="@layout/item_setting_action" android:id="@+id/itemPlaybackEngine" android:visibility="gone" />
+                <View android:background="?attr/colorOutlineVariant" android:layout_height="1dp" android:layout_marginStart="56dp" android:layout_width="match_parent" android:visibility="gone"/>
+                <include layout="@layout/item_setting_switch" android:id="@+id/itemFadePlayPause" />
+                <View android:background="?attr/colorOutlineVariant" android:layout_height="1dp" android:layout_marginStart="56dp" android:layout_width="match_parent"/>
+                <include layout="@layout/item_setting_switch" android:id="@+id/itemResumePlayingAfterAudioFocusGained" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/pref_screen_files_title"
+            android:textAppearance="?attr/textAppearanceTitleSmall"
+            android:visibility="gone"
+            android:textColor="?attr/colorOnSurface" />
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardBackgroundColor="#4DFFFFFF"
+            android:backgroundTint="?attr/colorSurfaceContainer"
+            android:visibility="gone"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="0dp"
+            app:strokeColor="#1FFFFFFF"
+            app:strokeWidth="0.75dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <include layout="@layout/item_setting_action" android:id="@+id/itemPlaylistDefaultPath" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/pref_screen_system_title"
+            android:textAppearance="?attr/textAppearanceTitleSmall"
+            android:textColor="?attr/colorOnSurface" />
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardBackgroundColor="#4DFFFFFF"
+            android:backgroundTint="?attr/colorSurfaceContainer"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="0dp"
+            app:strokeColor="#1FFFFFFF"
+            app:strokeWidth="0.75dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <include layout="@layout/item_setting_action"
+                    android:visibility="gone"
+                    android:id="@+id/itemHoldExit" />
+                <include layout="@layout/item_setting_action"
+                    android:visibility="gone"
+                    android:id="@+id/itemResetTips" />
+                <include layout="@layout/item_setting_action"
+                    android:visibility="gone"
+                    android:id="@+id/itemResetToDefault" />
+                <include layout="@layout/item_setting_action" android:id="@+id/itemOpenSourceLicenses" />
+                <View android:background="?attr/colorOutlineVariant" android:layout_height="1dp" android:layout_marginStart="56dp" android:layout_width="match_parent"/>
+                <include layout="@layout/item_setting_action" android:id="@+id/itemBackupRestore" />
+                <View android:background="?attr/colorOutlineVariant" android:layout_height="1dp" android:layout_marginStart="56dp" android:layout_width="match_parent"/>
+                <include layout="@layout/item_setting_action" android:id="@+id/itemAbout" />
+                <View android:background="?attr/colorOutlineVariant" android:layout_height="1dp" android:layout_marginStart="56dp" android:layout_width="match_parent"/>
+                <include layout="@layout/item_setting_switch" android:id="@+id/itemReceiveBetaUpdates" />
+                <View android:background="?attr/colorOutlineVariant" android:layout_height="1dp" android:layout_marginStart="56dp" android:layout_width="match_parent"/>
+                <include layout="@layout/item_setting_action" android:id="@+id/itemCheckUpdates" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

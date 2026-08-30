@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_popup_rounded"
+    android:clipToOutline="true"
+    android:padding="20dp">
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineCenter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.55" />
+    <TextView
+        android:id="@+id/tvGetStarted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GET STARTED"
+        android:textColor="?android:attr/textColorPrimary"
+        android:textAppearance="?attr/textAppearanceTitleMedium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/btnNewProject" />
+    <ImageButton
+        android:id="@+id/btnNewProject"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@drawable/bg_popup_rounded"
+        android:src="@drawable/ic_add2"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineCenter"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="?colorPrimaryContainer"
+        android:layout_marginEnd="16dp"/>
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:clipToOutline="true"
+        android:padding="4dp"
+        android:background="@drawable/bg_popup_rounded"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnNewProject"
+        app:tabIndicatorColor="?colorPrimaryContainer"
+        app:tabSelectedTextColor="?android:attr/textColorPrimary"
+        app:tabTextColor="?android:attr/textColorSecondary">
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Templates" />
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My projects" />
+    </com.google.android.material.tabs.TabLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewVisualizers"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:clipToPadding="true"
+        android:padding="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tabLayout" />
+    <LinearLayout
+        android:id="@+id/layoutRightActions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toEndOf="@+id/guidelineCenter"
+        app:layout_constraintTop_toTopOf="parent">
+        <ImageButton
+            android:id="@+id/btnDelete"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/bg_popup_rounded"
+            android:src="@drawable/ic_vis_delete"
+            app:tint="#F44336" />
+        <ImageButton
+            android:id="@+id/btnDuplicate"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/bg_popup_rounded"
+            android:src="@drawable/ic_vis_duplicate"
+            app:tint="@color/white" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tvSelectedTemplateName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="16dp"
+        android:text="Default Template #2"
+        android:textColor="?colorPrimaryContainer"
+        android:textAppearance="?attr/textAppearanceBodyMedium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/guidelineCenter"
+        app:layout_constraintTop_toBottomOf="@+id/layoutRightActions" />
+    <EditText
+        android:id="@+id/etSaveAs"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/bg_popup_rounded"
+        android:hint="Save as.."
+        android:textColorHint="#888888"
+        android:textColor="?android:attr/textColorPrimary"
+        android:padding="12dp"
+        android:textAppearance="?attr/textAppearanceBodyMedium"
+        android:singleLine="true"
+        android:imeOptions="actionDone"
+        app:layout_constraintEnd_toStartOf="@+id/btnSave"
+        app:layout_constraintStart_toEndOf="@+id/guidelineCenter"
+        app:layout_constraintTop_toBottomOf="@+id/tvSelectedTemplateName" />
+    <ImageButton
+        android:id="@+id/btnSave"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/bg_popup_rounded"
+        android:src="@drawable/ic_vis_upload"
+        app:layout_constraintEnd_toStartOf="@+id/btnImport"
+        app:layout_constraintTop_toTopOf="@+id/etSaveAs"
+        app:layout_constraintBottom_toBottomOf="@+id/etSaveAs"
+        app:tint="?colorPrimaryContainer" />
+    <ImageButton
+        android:id="@+id/btnImport"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@drawable/bg_popup_rounded"
+        android:src="@drawable/ic_vis_download"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/etSaveAs"
+        app:layout_constraintBottom_toBottomOf="@+id/etSaveAs"
+        app:tint="?colorPrimaryContainer" />
+    <FrameLayout
+        android:id="@+id/layoutGetStartedOverlay"
+        android:background="@drawable/bg_popup_rounded"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:elevation="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Get Started\n\nChoose a template to begin or\ncreate a New Project."
+            android:textAlignment="center"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textAppearance="?attr/textAppearanceHeadlineSmall"
+             />
+        <Button
+            android:id="@+id/btnDismissGetStarted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="32dp"
+            android:text="Got it"
+            android:backgroundTint="#42A5F5"
+            android:textColor="?android:attr/textColorPrimary"
+            app:cornerRadius="12dp" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

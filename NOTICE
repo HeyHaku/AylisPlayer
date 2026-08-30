@@ -1,0 +1,20 @@
+Aylis Player
+
+This product includes software originally developed by:
+- Avee Player (Copyright 2019 Avee Player) / Azy-Kun (https://github.com/Azy-Kun/AveeOpenPlayer_1.0.34) - Special thanks for the base codebase!
+
+This product also includes the following third-party open-source software, services, and platform support:
+1. Google Media3 / ExoPlayer (Apache License 2.0) - https://github.com/androidx/media
+2. NewPipeExtractor (GPLv3) by TeamNewPipe - https://github.com/TeamNewPipe/NewPipeExtractor
+3. GitHub (Platform & Hosting) - https://github.com
+4. Wallhaven (Wallpaper & photo API) - https://wallhaven.cc
+5. Avee Open Player by Azy-Kun - https://github.com/Azy-Kun/AveeOpenPlayer_1.0.34
+6. Cubiq (TheCubiq) - https://github.com/TheCubiq
+7. Google Android OS - https://developer.android.com
+8. Glide (BSD/MIT/Apache 2.0) - https://github.com/bumptech/glide
+9. Retrofit & OkHttp (Apache License 2.0) by Square, Inc. - https://github.com/square/okhttp
+10. Moshi (Apache License 2.0) by Square, Inc. - https://github.com/square/moshi
+11. AnimatedBottomBar (MIT) - https://github.com/DroppingCircle/AnimatedBottomBar
+12. jaudiotagger (LGPL) - https://github.com/ijabz/jaudiotagger
+
+Licensed under the Apache License, Version 2.0.

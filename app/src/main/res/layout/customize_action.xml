@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginHorizontal="24dp"
+    android:layout_marginVertical="4dp"
+    android:padding="4dp"
+>
+    <Button
+        android:id="@+id/btnAction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Action"
+        android:textAllCaps="false"
+        style="?android:attr/borderlessButtonStyle"
+        android:background="@drawable/bg_popup_rounded"
+        android:textColor="?android:attr/textColorPrimary" />
+</LinearLayout>

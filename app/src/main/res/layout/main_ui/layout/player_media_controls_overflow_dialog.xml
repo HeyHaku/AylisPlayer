@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="24dp"
+    app:cardElevation="0dp"
+    android:clipToOutline="true"
+    android:padding="4dp"
+    android:layout_margin="0dp"
+    app:cardBackgroundColor="?attr/colorSurface"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+        <LinearLayout
+            android:id="@+id/rowControls"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@drawable/bg_popup_rounded_fg"
+            android:clipToOutline="true"
+            android:padding="4dp"
+            android:layout_marginBottom="8dp">
+            <ImageButton
+                android:id="@+id/btnPlaybackEngine0"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_music_sys_native"
+                android:contentDescription="Native Engine"
+                android:tint="?android:attr/textColorSecondary" />
+            <ImageButton
+                android:id="@+id/btnPlaybackEngine1"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="8dp"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_music_sys_exo"
+                android:contentDescription="Exo Player"
+                android:tint="?android:attr/textColorSecondary" />
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+            <ImageButton
+                android:id="@+id/btnRepeatOnce"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_repeat_one"
+                android:tint="?android:attr/textColorSecondary" />
+            <ImageButton
+                android:id="@+id/btnRepeatAll"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="8dp"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_repeat_pl"
+                android:tint="?android:attr/textColorSecondary" />
+            <ImageButton
+                android:id="@+id/btnShuffle"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="8dp"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_ctrl_shuffle"
+                android:tint="?android:attr/textColorSecondary" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/rowVolume"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@drawable/bg_popup_rounded_fg"
+            android:clipToOutline="true"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="8dp">
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_volume"
+                android:tint="?android:attr/textColorSecondary" />
+            <SeekBar
+                android:id="@+id/seekBarVolume"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="12dp"
+                android:max="1000"
+                android:splitTrack="false"
+                android:progressTint="?attr/colorPrimary"
+                android:thumbTint="?android:attr/textColorPrimary"
+                android:progressBackgroundTint="?android:attr/textColorPrimary" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

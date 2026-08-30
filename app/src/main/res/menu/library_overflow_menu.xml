@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_visualizer"
+        android:title="Visualizer" />
+    <item
+        android:id="@+id/action_equalizer"
+        android:title="Equalizer"
+        android:visible="false"/>
+    <item
+        android:id="@+id/action_sleep_timer"
+        android:title="Sleep Timer"
+        android:visible="false"/>
+    <item
+        android:id="@+id/action_settings"
+        android:title="Settings"
+        android:visible="false"/>
+    <item
+        android:id="@+id/action_exit"
+        android:title="Exit"
+        android:visible="false"/>
+</menu>

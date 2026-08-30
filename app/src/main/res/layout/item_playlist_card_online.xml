@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="0dp"
+    app:strokeWidth="0dp"
+    app:cardBackgroundColor="#4DFFFFFF"
+    android:backgroundTint="?attr/colorSecondaryContainer">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp">
+        <ImageView
+            android:id="@+id/imgCardThumb"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="centerCrop"
+            android:background="?attr/colorSurfaceContainerHighest"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintDimensionRatio="1:1" />
+        <ImageView
+            android:id="@+id/iconPlaylistOverlay"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/bg_button_pill"
+            android:backgroundTint="#99000000"
+            android:src="@android:drawable/ic_menu_sort_by_size"
+            android:visibility="gone"
+            app:tint="?attr/colorSurface"/>
+        <ImageView
+            android:id="@+id/btnLike"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_margin="6dp"
+            android:padding="5dp"
+            android:background="@drawable/bg_button_pill"
+            android:backgroundTint="?attr/colorSurfaceContainerHigh"
+            android:src="@drawable/ic_liked"
+            app:tint="?attr/colorSurface"
+            app:layout_constraintTop_toTopOf="@id/imgCardThumb"
+            app:layout_constraintEnd_toEndOf="@id/imgCardThumb" />
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvCardTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginHorizontal="6dp"
+            android:textAppearance="?attr/textAppearanceLabelMedium"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="?attr/colorOnSurface"
+            tools:text="Track Title"
+            app:layout_constraintTop_toBottomOf="@id/imgCardThumb"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvCardArtist"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:layout_marginHorizontal="6dp"
+            android:textAppearance="?attr/textAppearanceBodySmall"
+            android:textSize="11sp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="?attr/colorOnSurfaceVariant"
+            tools:text="Artist Name"
+            app:layout_constraintTop_toBottomOf="@id/tvCardTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

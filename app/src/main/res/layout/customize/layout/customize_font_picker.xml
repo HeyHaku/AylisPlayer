@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="4dp">
+    <TextView
+        android:id="@+id/txtSelectedFontPath"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?attr/textAppearanceBodyMedium"
+        android:gravity="start"
+        android:layout_marginBottom="8dp"
+        android:ellipsize="middle"
+        android:singleLine="true" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:scrollbars="vertical"
+        android:layout_marginBottom="8dp">
+        <LinearLayout
+            android:id="@+id/layoutFonts"
+            android:clipToOutline="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnImportFont"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Import Font"
+            android:textAllCaps="true"
+            android:textAppearance="?attr/textAppearanceBodyMedium"
+            app:strokeColor="@color/white_alpha_1"
+            app:strokeWidth="1dp"
+            app:cornerRadius="8dp" />
+    </LinearLayout>
+</LinearLayout>

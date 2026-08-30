@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.slider.Slider
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/materialSlider"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="2dp"
+    android:valueFrom="0"
+    android:valueTo="100"
+    android:value="0"
+    app:thumbColor="@color/white_alpha_2"
+    app:trackColorActive="@color/white_alpha_3"
+    app:trackColorInactive="@color/white_alpha_4"
+    app:tickColor="@color/white_alpha_4"
+    app:trackHeight="8dp"
+    app:thumbWidth="4dp"
+    app:thumbHeight="20dp" />

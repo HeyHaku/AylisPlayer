@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToOutline="true"
+    android:background="@color/transparent">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToOutline="true"
+        android:paddingHorizontal="1dp"
+        android:background="@color/transparent"
+        app:elevation="0dp"
+        app:liftOnScroll="false"
+        app:liftOnScrollColor="@android:color/transparent">
+        <LinearLayout
+            android:id="@+id/layoutHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginVertical="4dp"
+            android:layout_marginHorizontal="2dp"
+            app:layout_scrollFlags="scroll|enterAlways|snap">
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabLayoutModeSwitcher"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:background="@color/transparent"
+                app:tabMode="auto"
+                app:tabTextColor="?attr/colorOnSurfaceVariant"
+                app:tabSelectedTextColor="?attr/colorOnSurface"
+                app:tabIndicatorColor="?attr/colorOnSurface"
+                app:tabIndicatorAnimationMode="elastic"
+                app:tabGravity="fill">
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="YouTube" />
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Photos" />
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fonts" />
+            </com.google.android.material.tabs.TabLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingVertical="0dp">
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabLayoutOnline"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                app:tabTextColor="?attr/colorOnSurfaceVariant"
+                app:tabSelectedTextColor="?attr/colorOnSurface"
+                app:tabIndicatorColor="?attr/colorOnSurface"
+                app:tabMode="scrollable"
+                app:tabIndicatorAnimationMode="elastic"
+                app:tabGravity="center" />
+            <ImageView
+                android:id="@+id/btnSearchToggle"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="8dp"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/ic_search"
+                android:background="?attr/actionBarItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                app:tint="?attr/colorOnSurface" />
+        </LinearLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <FrameLayout
+        android:id="@+id/contentFrame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewPagerOnline"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/photosContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fontsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+    </FrameLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

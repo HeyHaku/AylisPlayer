@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="260dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:checkable="true"
+    android:foreground="?attr/selectableItemBackground"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="2dp"
+    app:strokeWidth="0dp"
+    app:cardBackgroundColor="?attr/colorSurfaceContainerLow">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="12dp">
+        <ImageView
+            android:id="@+id/imgCardThumb"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="centerCrop"
+            android:background="?attr/colorSurfaceContainerHighest"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintDimensionRatio="16:9" />
+        <ImageView
+            android:id="@+id/iconPlaylistOverlay"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_margin="12dp"
+            android:padding="6dp"
+            android:src="@android:drawable/ic_menu_sort_by_size"
+            android:background="@drawable/bg_button_pill"
+            android:backgroundTint="#99000000"
+            app:tint="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="@id/imgCardThumb"
+            app:layout_constraintStart_toStartOf="@id/imgCardThumb" />
+        <ImageView
+            android:id="@+id/btnLike"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_margin="12dp"
+            android:padding="6dp"
+            android:background="@drawable/bg_button_pill"
+            android:backgroundTint="?colorSurfaceContainerHigh"
+            android:src="@drawable/ic_liked"
+            app:tint="?attr/colorSurface"
+            app:layout_constraintTop_toTopOf="@id/imgCardThumb"
+            app:layout_constraintEnd_toEndOf="@id/imgCardThumb"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/tvCardTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginEnd="14dp"
+            android:text="@string/online_mix_title_placeholder"
+            android:textAppearance="?attr/textAppearanceTitleMedium"
+            android:textStyle="bold"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textColor="?attr/colorOnSurface"
+            app:layout_constraintTop_toBottomOf="@id/imgCardThumb"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+        <TextView
+            android:id="@+id/tvCardArtist"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginEnd="14dp"
+            android:text="@string/online_mix_description_placeholder"
+            android:textAppearance="?attr/textAppearanceBodyMedium"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textColor="?attr/colorOnSurfaceVariant"
+            app:layout_constraintTop_toBottomOf="@id/tvCardTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

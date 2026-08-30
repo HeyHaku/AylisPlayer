@@ -1,0 +1,276 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Aylis Player</string>
+    <string name="pref_screen_ui_title">Зовнішній вигляд та інтерфейс</string>
+    <string name="pref_screen_ui_summary">Тема додатка, жести та елементи керування</string>
+    <string name="pref_screen_visualizer_title">Візуалізатор</string>
+    <string name="pref_screen_visualizer_summary">Частота кадрів, затримка звуку та якість розмиття</string>
+    <string name="pref_screen_playback_title">Відтворення та звук</string>
+    <string name="pref_screen_playback_summary">Аудіорушій, згасання та аудіофокус</string>
+    <string name="pref_screen_files_title">Файли та папки</string>
+    <string name="pref_screen_files_summary">Шляхи збереження плейлистів</string>
+    <string name="pref_screen_system_title">Система</string>
+    <string name="pref_screen_system_summary">Скидання налаштувань та ліцензії додатка</string>
+    <string name="pref_resetToDefault_title">Скинути за замовчуванням</string>
+    <string name="pref_appTheme">Колірна тема</string>
+    <string-array name="pref_appTheme_entries">
+        <item>Темна</item>
+        <item>Світла</item>
+        <item>Динамічний колір (M3)</item>
+    </string-array>
+    <string name="pref_hold_exit">Утримувати НАЗАД для виходу з додатка</string>
+    <string-array name="pref_hold_exit_entries">
+        <item>0.2 секунди</item>
+        <item>0.4 секунди</item>
+        <item>0.6 секунди</item>
+        <item>0.8 секунди</item>
+        <item>1.0 секунда</item>
+        <item>Вимкнено</item>
+    </string-array>
+    <string name="pref_libswipeback">Жест навігації в бібліотеці</string>
+    <string name="pref_libswipeback2">Свайп праворуч для повернення назад у бібліотеці</string>
+    <string name="pref_toolButtonsShowTexts">Текст кнопок панелі</string>
+    <string name="pref_toolButtonsShowTexts2">Показувати текст під кнопками інструментів</string>
+    <string name="pref_visControlsTimeout">Авто-розгортання відео/візуалізатора</string>
+    <string name="pref_visControlsTimeout2">Автоматично розгортати через деякий час</string>
+    <string name="pref_fadePlayPause">Плавне згасання звуку</string>
+    <string name="pref_fadePlayPause2">Плавно змінювати гучність при паузі/відтворенні</string>
+    <string name="pref_resumePlayingAfterAudioFocusGained">Відновлювати після дзвінка</string>
+    <string name="pref_resumePlayingAfterAudioFocusGained2">Відновлювати відтворення при поверненні аудіофокусу</string>
+    <string name="pref_playbackEngine">Аудіорушій</string>
+    <string name="pref_exoVisualizerOffset">Затримка візуалізатора ExoPlayer</string>
+    <string-array name="pref_exoVisualizerOffset_entries">
+        <item>0 мс</item>
+        <item>-100 мс</item>
+        <item>-200 мс</item>
+        <item>-300 мс</item>
+        <item>-400 мс</item>
+        <item>-500 мс (За замовчуванням)</item>
+        <item>-600 мс</item>
+        <item>-700 мс</item>
+        <item>-800 мс</item>
+        <item>-900 мс</item>
+        <item>-1000 мс</item>
+    </string-array>
+    <string name="pref_highQualityBlur_txt1">Висока якість розмиття</string>
+    <string name="pref_highQualityBlur_txt2">Може значно знизити FPS візуалізатора</string>
+    <string name="pref_visualizerGlobalSession_txt1">Візуалізувати глобальну аудіосесію</string>
+    <string name="pref_visualizerGlobalSession_txt2">Запобігає спотворенню звуку на деяких пристроях</string>
+    <string name="pref_playlistDefaultPath_txt1">Шлях за замовчуванням для файлів плейлистів</string>
+    <string name="pref_resetTips_txt1">Скинути підказки</string>
+    <string name="pref_resetTips_txt2">Показувати всі підказки знову</string>
+    <string name="pref_reset_dialog_title">Скинути за замовчуванням?</string>
+    <string name="pref_reset_dialog_message">Це скине всі збережені налаштування</string>
+    <string name="pref_openSourceLicenses">Ліцензії стороннього ПЗ</string>
+    <string name="pref_emailDeveloper_txt1">Надіслати відгук</string>
+    <string name="pref_ui_layout_ccs_title">Макет керування CCS</string>
+    <string name="pref_ui_layout_ccs_summary">Увімкнути роздільний вигляд 50/50 для візуалізатора та керування</string>
+    <string name="pref_about_title">Про додаток Aylis Player</string>
+    <string name="pref_about_summary">Інформація, версії та ліцензія</string>
+    <string name="pref_about_dialog_message">Aylis Player\n\nПроєкт створено на базі відкритого вихідного коду Avee Open Player (GitHub).\n\nВключає сторонні бібліотеки: NewPipeExtractor (GPLv3), ExoPlayer та інші (див. розділ Ліцензії).\n\nПоширюється за ліцензією GNU General Public License v3.0 (GPLv3).\n\nCopyright 2019 Avee Player.\nCopyright 2026 Aylis Player Contributors.</string>
+    <string name="playback_service_notif_channel_name">com.aylis.ch0</string>
+    <string name="fps_title_60">60 FPS (Рекомендовано)</string>
+    <string name="fps_title_120">120 FPS (Нестабільно / Експериментально)</string>
+    <string name="fps_warning_title">Висока частота кадрів</string>
+    <string name="fps_warning_message">Увімкнення режиму 120 FPS може збільшити енергоспоживання та призвести до пропуску кадрів на деяких пристроях. Продовжити?</string>
+    <string name="fps_dialog_ok">Продовжити</string>
+    <string name="fps_dialog_cancel">Скасувати</string>
+    <string name="pref_visualizerFrameRateLimit">Ліміт FPS візуалізатора</string>
+    <string name="pref_visualizerResolutionScale">Масштаб роздільної здатності візуалізатора</string>
+    <string name="pref_theme_mode_title">Режим теми</string>
+    <string-array name="pref_theme_mode_entries">
+        <item>Динамічний колір (M3)</item>
+    </string-array>
+    <string name="onboarding_welcome">Ласкаво просимо</string>
+    <string name="onboarding_start">Почати</string>
+    <string name="onboarding_permissions_title">Дозволи</string>
+    <string name="onboarding_permissions_desc">Натисніть на картку, щоб надати дозвіл. Пам\'ять є обов\'язковою.</string>
+    <string name="onboarding_storage_title">Пам\'ять (Усі файли)</string>
+    <string name="onboarding_storage_desc">Для музики, відео та шрифтів.</string>
+    <string name="onboarding_mic_title">Мікрофон</string>
+    <string name="onboarding_mic_desc">Для роботи візуалізатора.</string>
+    <string name="onboarding_notif_title">Сповіщення</string>
+    <string name="onboarding_notif_desc">Керування зі шторки.</string>
+    <string name="onboarding_continue">Продовжити</string>
+    <string name="online_infinite_recommendations">Нескінченні рекомендації</string>
+    <string name="online_quick_picks">Швидкий вибір</string>
+    <string name="online_listen_again">Слухати знову</string>
+    <string name="online_mixes">Мікси</string>
+    <string name="online_forgotten_favorites">Забуті улюблені</string>
+    <string name="online_similar_to">Схоже на</string>
+    <string name="online_empty_search">Нічого не знайдено</string>
+    <string name="online_network_error">Помилка мережі. Перевірте з\'єднання</string>
+    <string name="export_title">ЕКСПОРТ ВІДЕО</string>
+    <string name="export_settings_title">НАЛАШТУВАННЯ ЕКСПОРТУ</string>
+    <string name="export_btn_cancel">Скасувати</string>
+    <string name="export_btn_close">Закрити</string>
+    <string name="export_btn_save">Зберегти</string>
+    <string name="export_hint_quality">Якість</string>
+    <string name="export_hint_fps">Кадри (FPS)</string>
+    <string name="export_hint_bitrate">Бітрейт</string>
+    <string name="export_btn_start_time">Початок</string>
+    <string name="export_btn_end_time">Кінець</string>
+    <string name="export_btn_start_time_format">Час початку %1$s</string>
+    <string name="export_btn_end_time_format">Час закінчення %1$s</string>
+    <string name="export_default_folder">Папка за замовчуванням</string>
+    <string name="export_selected_folder">Вибрана папка</string>
+    <string name="export_template_name_hint">Назва шаблону</string>
+    <string name="export_template_name_format">Шаблон #%1$d</string>
+    <string name="export_bitrate_low">Низький (5 Мбіт/с)</string>
+    <string name="export_bitrate_medium">Середній (10 Мбіт/с)</string>
+    <string name="export_bitrate_high">Високий (20 Мбіт/с)</string>
+    <string name="export_status_finished">Експорт завершено!</string>
+    <string name="export_error_prefix">Помилка:</string>
+    <string name="export_error_no_track">Помилка: Трек для відтворення не знайдено!</string>
+    <string name="export_status_downloading">Завантаження аудіо...</string>
+    <string name="export_status_rendering">Рендеринг відео...</string>
+    <string name="export_status_muxing">Збирання файлу...</string>
+    <string name="export_video_info_format">MP4 • %1$d МБ • %2$s</string>
+    <string name="export_download_progress_format">%1$s %2$d / %3$s МБ</string>
+    <string name="online_tab_discover">Головна</string>
+    <string name="online_tab_playlists">Плейлисти</string>
+    <string name="online_tab_recap">Підсумки</string>
+    <string name="online_already_logged_in">Уже виконано вхід</string>
+    <string name="online_create_new_playlist">Створити новий плейлист</string>
+    <string name="online_dialog_new_playlist_title">Новий плейлист</string>
+    <string name="online_dialog_create">Створити</string>
+    <string name="online_dialog_cancel">Скасувати</string>
+    <string name="online_playlist_name_hint">Назва плейлиста</string>
+    <string name="online_liked_music">Улюблені треки</string>
+    <string name="online_auto_playlist">Авто-плейлист</string>
+    <string name="online_toast_created_playlist">Плейлист створено</string>
+    <string name="online_toast_failed_to_create">Не вдалося створити плейлист</string>
+    <string name="online_toast_created_and_added">Створено та додано</string>
+    <string name="online_toast_added_to_playlist">Додано до плейлиста</string>
+    <string name="online_toast_failed_to_add">Не вдалося додати</string>
+    <string name="online_toast_failed_to_load_playlist">Не вдалося завантажити плейлист</string>
+    <string name="online_toast_removed_from_likes">Видалено з улюблених</string>
+    <string name="online_toast_added_to_likes">Додано до улюблених</string>
+    <string name="online_toast_removed_from_list">Видалено зі списку</string>
+    <string name="online_menu_like">Подобається</string>
+    <string name="online_menu_remove_from_liked">Видалити з улюблених</string>
+    <string name="online_menu_add_to_playlist">Додати до плейлиста</string>
+    <string name="online_menu_not_interested">Не цікаво</string>
+    <string name="online_search_hint">Пошук у YouTube Music...</string>
+    <string name="online_recent_searches">Нещодавні пошуки</string>
+    <string name="online_recap_total_plays">Усього прослуховувань</string>
+    <string name="online_recap_avg_per_day">У середньому за день</string>
+    <string name="online_recap_top_track">Кращий трек</string>
+    <string name="online_recap_none">Немає</string>
+    <string name="online_recap_plays_count">%1$d прослуховувань</string>
+    <string name="online_recap_time_format">%1$d год %2$d хв</string>
+    <string name="online_recap_time_format_mins">%1$d хв</string>
+    <string name="online_playlist_add_to">Додати до плейлиста</string>
+    <string name="online_playlist_default_title">Плейлист</string>
+    <string name="online_mix_title_placeholder">Назва міксу</string>
+    <string name="online_mix_description_placeholder">Опис</string>
+    <string name="online_search_query_placeholder">Пошуковий запит</string>
+    <string name="pref_online_card_title">Звук та Онлайн</string>
+    <string name="pref_online_shelf_playback_mode_title">Відтворення з добірок</string>
+    <string name="pref_online_shelf_playback_mode_queue">Вся секція в чергу</string>
+    <string name="pref_online_shelf_playback_mode_single">Тільки вибраний трек</string>
+    <string name="pref_online_infinite_radio_title">Нескінченні рекомендації</string>
+    <string name="pref_online_infinite_radio_summary">Підвантажувати схожі треки в кінець черги</string>
+    <string name="pref_backup_restore_title">Резервне копіювання</string>
+    <string name="pref_backup_restore_summary">Імпорт та експорт налаштувань</string>
+    <string name="backup_saved_success">Резервну копію збережено</string>
+    <string name="backup_saved_error">Помилка збереження резервної копії</string>
+    <string name="backup_restore_completed_title">Відновлення завершено</string>
+    <string name="backup_restore_completed_message">Налаштування успішно відновлено. Для застосування змін програму буде перезапущено.</string>
+    <string name="backup_restore_restart_button">Перезапустити</string>
+    <string name="backup_import_error">Помилка імпорту резервної копії</string>
+    <string name="backup_share_title">Поділитися налаштуваннями</string>
+    <string name="backup_share_error">Помилка підготовки до відправки</string>
+    <string name="backup_dialog_main_message">Експортуйте поточні налаштування або імпортуйте раніше збережену копію.\n\nУвага: Дані облікового запису Google виключаються з резервних копій з міркувань безпеки.</string>
+    <string name="backup_dialog_export_btn">Експорт</string>
+    <string name="backup_dialog_import_btn">Імпорт</string>
+    <string name="backup_dialog_export_title">Експорт налаштувань</string>
+    <string name="backup_dialog_export_message">Виберіть, куди зберегти файл резервної копії.</string>
+    <string name="backup_dialog_save_device_btn">Зберегти на пристрої</string>
+    <string name="backup_dialog_share_btn">Поділитися</string>
+    <string name="profile_connected_ytm">Підключено до YouTube Music</string>
+    <string name="profile_guest_mode">Гостьовий режим</string>
+    <string name="profile_no_ytm_connection">Немає підключення до YouTube Music</string>
+    <string name="ambient_master_switch">Головний перемикач (Усі профілі)</string>
+    <string name="ambient_enable_profile">Увімкнути Ambient Glow</string>
+    <string name="ambient_brightness">Яскравість</string>
+    <string name="ambient_duration">Тривалість переходу (мс)</string>
+    <string name="ambient_editor_title">Редактор опорних точок (Перетягніть для переміщення)</string>
+    <string name="ambient_btn_add_point">+1 Точка</string>
+    <string name="ambient_btn_remove_point">-1 Точка</string>
+    <string name="ambient_btn_reset_points">Скинути до 5</string>
+    <string name="ambient_profile_dialogs">Діалоги</string>
+    <string name="ambient_profile_player_big">Плеєр (Великий)</string>
+    <string name="ambient_profile_player_mini">Плеєр (Міні)</string>
+    <string name="ambient_profile_main">Головний екран</string>
+    <string name="font_download_prompt">Загрузить данный шрифт?</string>
+    <string name="font_download_yes">Да</string>
+    <string name="font_download_no">Нет</string>
+    <string name="font_author_format">Автор: %s</string>
+    <string name="photo_author_unknown">Wallhaven</string>
+    <string name="photo_btn_visit">Открыть оригинал</string>
+    <string name="photo_btn_download">Сохранить</string>
+    <string name="font_github_link">Открыть репозиторий GitHub</string>
+    <string name="tab_search_fonts">Search</string>
+    <string name="tab_downloaded_fonts">Downloaded</string>
+    <string name="dialog_delete_font_title">Удалить?</string>
+    <string name="dialog_delete_font_msg">Вы уверены, что хотите удалить этот шрифт?</string>
+    <string name="action_yes">Да</string>
+    <string name="action_no">Нет</string>
+    <string name="prop_typeface">Typeface</string>
+    <string name="tab_library_all">All</string>
+    <string name="tab_library_download">Download</string>
+    <string name="ads_header_banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="ads_footer_banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="ellipsis_placeholder">…</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    
+    
+    
+    
+    <string name="pref_ambient_settings_title">Ambient Glow Settings</string>
+    
+    <string name="pref_screen_vibration_title">Vibration</string>
+    <string name="pref_hapticFeedback_intensity">Vibration Intensity</string>
+    <string name="pref_hapticFeedback_type">Vibration Type</string>
+    <string name="pref_haptic_global">Global Vibration</string>
+    <string name="pref_haptic_global2">Vibrate on any touch across the entire screen</string>
+    
+    
+    
+    
+    <string name="pref_receive_beta_updates">Получать бета-версии</string>
+    <string name="pref_receive_beta_updates_summary">Получать ранние сборки (Pre-release) с новыми функциями</string>
+    <string name="pref_check_updates">Проверить обновления</string>
+    <string name="pref_open_source_title">Open Source &amp; Acknowledgements</string>
+    <string name="pref_open_source_subtitle">Special thanks to the projects and people making Aylis Player possible</string>
+    <string name="open_source_desc_media3">High-performance media playback engine for Android</string>
+    <string name="open_source_desc_newpipe">Lightweight library to extract audio streams and metadata from public online services</string>
+    <string name="open_source_desc_github">Hosting and platform for open source collaboration</string>
+    <string name="open_source_desc_wallhaven">Awesome wallpaper community powering photo discovery</string>
+    <string name="open_source_thanks_avee">Thanks for the base, this app exists because of it!</string>
+    <string name="open_source_thanks_cubiq">Wonderful person</string>
+    <string name="open_source_thanks_android">Thank you for Android OS, allowing me to create apps like this</string>
+    <string name="open_source_desc_glide">Fast and efficient media management and image loading framework</string>
+    <string name="open_source_desc_retrofit">Type-safe HTTP client for Android and Java by Square</string>
+    <string name="open_source_desc_moshi">Modern JSON library for Android, Java and Kotlin by Square</string>
+    <string name="open_source_desc_bottombar">Smooth customizable bottom navigation bar for Android</string>
+    <string name="open_source_desc_jaudiotagger">Audio tagging library for managing audio file metadata</string>
+    <string name="crash_dialog_title">Произошла ошибка</string>
+    <string name="crash_dialog_desc">Приложение завершило работу из-за непредвиденной ошибки. Детали сбоя:</string>
+    <string name="crash_dialog_btn_share">Поделиться</string>
+    <string name="crash_dialog_btn_tg">ТГ автору</string>
+    <string name="crash_dialog_btn_close">Закрыть</string>
+    <string name="crash_share_text_prefix">Смотри, какой прикол, прога сдалась:\n\n%s</string>
+    <string name="crash_share_chooser_title">Поделиться логом</string>
+    <string name="crash_toast_copied">Лог скопирован в буфер обмена! Просто вставь его в чат.</string>
+    <string name="crash_toast_tg_not_found">Telegram не найден!</string>
+    <string name="photo_downloading_progress">Downloading: %d%%</string>
+    <string name="photo_downloaded">Downloaded</string>
+    <string name="photo_download_error">Error</string>
+    <string name="photo_select_quality">Select Quality</string>
+    <string name="photo_quality_raw">Raw (Original)</string>
+    <string name="photo_quality_full">Full (High)</string>
+    <string name="photo_quality_regular">Regular (Medium)</string>
+</resources>

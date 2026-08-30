@@ -1,0 +1,13 @@
+--- app/src/main/java/com/aveeopen/comp/visual/core/Graphic/RenderState.java
++++ app/src/main/java/com/aveeopen/comp/visual/core/Graphic/RenderState.java
+@@ -321,8 +321,10 @@
+ 
+         private String blurVERT,blurFRAG, blurFRAG2, kawaseFRAG;
+         private String bufferVERT, bufferFRAG;
++        private String bufferMaskFRAG;
+         private String fxaaShaderVERT, fxaaShaderFRAG;
+ 
+         private VShaderProgram blurShader, blurShader2, kawaseShader;
+         private VShaderProgram fxaaShader;
+         private VShaderProgram atlasBufferShader;
++        private VShaderProgram atlasBufferMaskShader;
