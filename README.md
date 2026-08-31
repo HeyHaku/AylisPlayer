@@ -12,7 +12,7 @@ An open-source, hybrid Android media player combining offline audio, online stre
 
 ## ✨ Features
 
-- **Hybrid Audio Engine**: Play local music files and stream online content from YouTube Music (via NewPipeExtractor).
+- **Hybrid Audio Engine**: Play local music files and stream online audio content (via NewPipeExtractor).
 - **Audio Visualizer**: Real-time OpenGL & Canvas reactive audio visualizers with customizable spectrums, motion blur, and shaders.
 - **Video Export**: Render and export playing audio tracks with visualizers into MP4 video files.
 - **Ambient Lighting System**: Advanced ambient background glow with custom anchor points, brightness, and direction control across UI components.
@@ -63,4 +63,4 @@ Distributed under the **GNU General Public License v3.0 (GPL-3.0)**. See `LICENS
 
 ---
 
-<sub>**Keywords**: android music player, youtube music client, audio visualizer, video export, wallhaven wallpaper downloader, font manager, material 3, open source android player, ambient lighting, offline player, streaming player, music visualizer, vimusic alternative, avee player alternative.</sub>
+<sub>**Keywords**: android music player, audio visualizer, video export, wallhaven wallpaper downloader, font manager, material 3, open source android player, ambient lighting, offline player, streaming player, music visualizer, avee player alternative.</sub>
