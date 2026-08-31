@@ -7,11 +7,15 @@ An open-source, hybrid Android media player combining offline audio, online stre
 ## 📸 Screenshots
 
 <p align="center">
-  <img src="screenshots/player.jpg" width="19%" alt="Player UI" />
-  <img src="screenshots/home.jpg" width="19%" alt="Discover Home" />
-  <img src="screenshots/photos.jpg" width="19%" alt="Wallpapers Feed" />
-  <img src="screenshots/fonts.jpg" width="19%" alt="Typography Feed" />
-  <img src="screenshots/editor.jpg" width="19%" alt="Visualizer Editor" />
+  <img src="screenshots/player.jpg" width="23%" alt="Player UI" />
+  <img src="screenshots/home.jpg" width="23%" alt="Discover Home" />
+  <img src="screenshots/library.jpg" width="23%" alt="Local Library" />
+  <img src="screenshots/editor.jpg" width="23%" alt="Visualizer Editor" />
+</p>
+<p align="center">
+  <img src="screenshots/photos.jpg" width="23%" alt="Wallpapers Feed" />
+  <img src="screenshots/photo_detail.jpg" width="23%" alt="Artwork Detail" />
+  <img src="screenshots/fonts.jpg" width="23%" alt="Typography Feed" />
 </p>
 
 ---
