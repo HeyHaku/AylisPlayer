@@ -1,42 +1,45 @@
-# AylisPlayer 🎵
+# AylisPlayer
 
-[![License: GPL-3.0](https://img.shields.io/badge/License-GPL--3.0-blue.svg)](https://www.gnu.org/licenses/gpl-3.0.html)
-[![Android](https://img.shields.io/badge/Android-7.0%2B-green.svg)](https://developer.android.com)
-[![Kotlin](https://img.shields.io/badge/Kotlin-1.9.0-purple.svg)](https://kotlinlang.org)
-[![Design](https://img.shields.io/badge/Design-Material--3-orange.svg)](https://m3.material.io)
+An open-source, hybrid Android media player combining offline audio, online streaming, audio visualization, wallpaper feed, custom typography, and video export in a single Material 3 experience.
 
-**AylisPlayer** is a modern, feature-rich Android media powerhouse built with Material 3 Expressive design. It combines local music playback, online streaming, a reactive audio visualizer, a wallpaper hub, custom typography, and automatic in-app updates.
+---
+
+## 📸 Screenshots
+
+*(Screenshots coming soon)*
 
 ---
 
 ## ✨ Features
 
-- 🎵 **Local & Online Music Playback**: Powered by Google Media3 / ExoPlayer with YouTube Music integration via NewPipeExtractor.
-- 🎨 **Reactive Audio Visualizer**: Highly customizable OpenGL and Canvas audio visualizer with reactive spectrums, motion blur, and custom shader effects.
-- 🌌 **Ambient Glow Effect**: Dynamic ambient background lighting synchronized with album art.
-- 🖼️ **Wallpaper & Photo Hub**: Explore high-resolution artwork powered by Wallhaven with instant downloads.
-- ✍️ **Typography Customization**: Custom font downloader allowing personalized UI typefaces.
-- 🔄 **In-App Updater**: Automatic update checker using GitHub Releases API with support for pre-releases.
-- 🌐 **Multi-Language Support**: Fully localized in English, Russian, Ukrainian, Portuguese (Brazil), and Vietnamese.
+- **Hybrid Audio Engine**: Play local music files and stream online content from YouTube Music (via NewPipeExtractor).
+- **Audio Visualizer**: Real-time OpenGL & Canvas reactive audio visualizers with customizable spectrums, motion blur, and shaders.
+- **Video Export**: Render and export playing audio tracks with visualizers into MP4 video files.
+- **Ambient Lighting System**: Advanced ambient background glow with custom anchor points, brightness, and direction control across UI components.
+- **Photo & Wallpaper Feed**: Discover, view, and download high-res artwork from Wallhaven.
+- **Font & Typography Manager**: Download and apply custom typefaces to personalize the app interface.
+- **Backup & Restore**: Export and import complete app settings safely.
+- **In-App Updater**: Automatic update notifications directly via GitHub Releases.
+- **Multi-Language**: Fully localized in English, Russian, Ukrainian, Portuguese (Brazil), and Vietnamese.
 
 ---
 
-## 🛠️ Built With & Third-Party Attributions
+## 🛠️ Third-Party Libraries & Acknowledgements
 
-Special thanks to the open-source projects, libraries, and developers that made AylisPlayer possible:
+This project uses and attributes the following open-source libraries, APIs, and base implementations:
 
-| Library / Service | License | Description / Author | Link |
+| Project / Library | License | Description / Author | Link |
 | :--- | :--- | :--- | :--- |
 | **Avee Open Player** | Open Source | Original base codebase by Azy-Kun | [GitHub](https://github.com/Azy-Kun/AveeOpenPlayer_1.0.34) |
 | **Google Media3 / ExoPlayer** | Apache 2.0 | Audio and video playback engine by Google | [GitHub](https://github.com/androidx/media) |
-| **NewPipeExtractor** | GPL-3.0 | Lightweight streaming extractor by TeamNewPipe | [GitHub](https://github.com/TeamNewPipe/NewPipeExtractor) |
-| **Glide** | BSD/MIT/Apache 2.0 | Efficient media and image loading framework by Bumptech | [GitHub](https://github.com/bumptech/glide) |
-| **Retrofit & OkHttp** | Apache 2.0 | Type-safe HTTP client for Android by Square | [GitHub](https://github.com/square/okhttp) |
-| **Moshi** | Apache 2.0 | Modern JSON library for Android by Square | [GitHub](https://github.com/square/moshi) |
-| **AnimatedBottomBar** | MIT | Customizable bottom navigation bar | [GitHub](https://github.com/DroppingCircle/AnimatedBottomBar) |
+| **NewPipeExtractor** | GPL-3.0 | Online audio stream extraction by TeamNewPipe | [GitHub](https://github.com/TeamNewPipe/NewPipeExtractor) |
+| **Glide** | BSD/MIT/Apache 2.0 | Media loading and caching library by Bumptech | [GitHub](https://github.com/bumptech/glide) |
+| **Retrofit & OkHttp** | Apache 2.0 | HTTP client and networking stack by Square | [GitHub](https://github.com/square/okhttp) |
+| **Moshi** | Apache 2.0 | JSON serialization library by Square | [GitHub](https://github.com/square/moshi) |
+| **AnimatedBottomBar** | MIT | Custom bottom navigation interface | [GitHub](https://github.com/DroppingCircle/AnimatedBottomBar) |
 | **Jaudiotagger** | LGPL | Audio metadata tagging library | [GitHub](https://github.com/ijabz/jaudiotagger) |
-| **Wallhaven** | Service API | High-resolution wallpaper community | [Wallhaven](https://wallhaven.cc) |
-| **Cubiq (TheCubiq)** | Acknowledgement | Contributor and open-source enthusiast | [GitHub](https://github.com/TheCubiq) |
+| **Wallhaven** | Service API | Wallpaper & photo discovery platform | [Wallhaven](https://wallhaven.cc) |
+| **Cubiq (TheCubiq)** | Acknowledgement | Open-source contributor & graphics reference | [GitHub](https://github.com/TheCubiq) |
 
 ---
 
@@ -46,7 +49,7 @@ Special thanks to the open-source projects, libraries, and developers that made 
    ```bash
    git clone https://github.com/HeyHaku/AylisPlayer.git
    ```
-2. Open the project in **Android Studio** (JDK 17+ recommended).
+2. Open in **Android Studio** (JDK 17+ recommended).
 3. Build the debug APK:
    ```bash
    ./gradlew assembleDebug
@@ -56,4 +59,8 @@ Special thanks to the open-source projects, libraries, and developers that made 
 
 ## 📄 License
 
-Distributed under the **GNU General Public License v3.0 (GPL-3.0)**. See `LICENSE` and `NOTICE` for details.
+Distributed under the **GNU General Public License v3.0 (GPL-3.0)**. See `LICENSE` and `NOTICE` files for details.
+
+---
+
+<sub>**Keywords**: android music player, youtube music client, audio visualizer, video export, wallhaven wallpaper downloader, font manager, material 3, open source android player, ambient lighting, offline player, streaming player, music visualizer, vimusic alternative, avee player alternative.</sub>
