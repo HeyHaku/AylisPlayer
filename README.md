@@ -6,11 +6,17 @@ An open-source, hybrid Android media player combining offline audio, online stre
 
 ## 📸 Screenshots
 
-*(Screenshots coming soon)*
+<p align="center">
+  <img src="screenshots/player.jpg" width="19%" alt="Player UI" />
+  <img src="screenshots/home.jpg" width="19%" alt="Discover Home" />
+  <img src="screenshots/photos.jpg" width="19%" alt="Wallpapers Feed" />
+  <img src="screenshots/fonts.jpg" width="19%" alt="Typography Feed" />
+  <img src="screenshots/editor.jpg" width="19%" alt="Visualizer Editor" />
+</p>
 
 ---
 
-## ✨ Features
+##  Features
 
 - **Hybrid Audio Engine**: Play local music files and stream online audio content (via NewPipeExtractor).
 - **Audio Visualizer**: Real-time OpenGL & Canvas reactive audio visualizers with customizable spectrums, motion blur, and shaders.
@@ -24,7 +30,7 @@ An open-source, hybrid Android media player combining offline audio, online stre
 
 ---
 
-## 🛠️ Third-Party Libraries & Acknowledgements
+## Third-Party Libraries & Acknowledgements
 
 This project uses and attributes the following open-source libraries, APIs, and base implementations:
 
@@ -63,4 +69,6 @@ Distributed under the **GNU General Public License v3.0 (GPL-3.0)**. See `LICENS
 
 ---
 
-<sub>**Keywords**: android music player, audio visualizer, video export, wallhaven wallpaper downloader, font manager, material 3, open source android player, ambient lighting, offline player, streaming player, music visualizer, avee player alternative.</sub>
+OffTopic
+---
+Keywords: android music player, audio visualizer, video export, wallhaven wallpaper downloader, font manager, material 3, open source android player, ambient lighting, offline player, streaming player, music visualizer, opengl es visualizer, glsl shaders, real-time audio spectrum, synced lyrics, lrc lyrics parser, particle system visualizer, audio reactive visuals, multi-layer visualizer, hardware accelerated rendering, custom shader engine, local media library, tag editor, metadata editor, high resolution audio, gapless playback, background audio playback, material expressive, dynamic theming, monet theme engine, ambient glow ui, modern android ui, custom ui layout, dark theme music player, wallpaper hub, nerd fonts downloader, typography manager, visualizer presets, custom backgrounds, live video background, privacy friendly player, no ads music player, open source audio, video renderer, android visualizer app, audio reactive animations, custom fonts.
