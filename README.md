@@ -10,9 +10,10 @@ An open-source, hybrid Android media player combining offline audio, online stre
   <img src="screenshots/player.jpg" width="23%" alt="Player UI" />
   <img src="screenshots/home.jpg" width="23%" alt="Discover Home" />
   <img src="screenshots/library.jpg" width="23%" alt="Local Library" />
-  <img src="screenshots/editor.jpg" width="23%" alt="Visualizer Editor" />
+  <img src="screenshots/ambient.png" width="23%" alt="Ambient Glow Settings" />
 </p>
 <p align="center">
+  <img src="screenshots/editor.jpg" width="23%" alt="Visualizer Editor" />
   <img src="screenshots/photos.jpg" width="23%" alt="Wallpapers Feed" />
   <img src="screenshots/photo_detail.jpg" width="23%" alt="Artwork Detail" />
   <img src="screenshots/fonts.jpg" width="23%" alt="Typography Feed" />
@@ -28,10 +29,7 @@ An open-source, hybrid Android media player combining offline audio, online stre
 - **Ambient Lighting System**: Advanced ambient background glow with custom anchor points, brightness, and direction control across UI components.
 - **Photo & Wallpaper Feed**: Discover, view, and download high-res artwork from Wallhaven.
 - **Font & Typography Manager**: Download and apply custom typefaces to personalize the app interface.
-- **Backup & Restore**: Export and import complete app settings safely.
 - **In-App Updater**: Automatic update notifications directly via GitHub Releases.
-- **Multi-Language**: Fully localized in English, Russian, Ukrainian, Portuguese (Brazil), and Vietnamese.
-
 ---
 
 ## Third-Party Libraries & Acknowledgements
